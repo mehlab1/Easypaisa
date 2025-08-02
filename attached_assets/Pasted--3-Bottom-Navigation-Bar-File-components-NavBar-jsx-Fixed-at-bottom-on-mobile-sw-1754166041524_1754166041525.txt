@@ -1,0 +1,123 @@
+
+3. **Bottom Navigation Bar**  
+- File: `components/NavBar.jsx`  
+- Fixed at bottom on mobile; switches to left sidebar on desktop (use a media query breakpoint at `768px`).  
+- Tabs/icons: Home, Payments, [+] Create, **Budget** (piggy-bank icon), Settings.  
+- Active tab highlight: use `#A7C638` underline or background circle.
+
+4. **Home Screen – `pages/Home.jsx`**  
+- **Header**: Centered card with text  
+  ```
+  Wallet Balance
+  ₨ 12,450.00
+  ```  
+  Style: white card, 16px padding, border-radius `12px`, box-shadow.  
+- **AI Assistant Icon**: Top-right corner, `assets/icons/assistant.svg`. On click, opens `<ChatDrawer />`.  
+- **Suggested for You**:  
+  - Component: `SuggestionCard.jsx`  
+  - Horizontal card under balance. Icon `bill.svg`, text:  
+    ```
+    Suggested for You
+    Pay Electricity Bill (Due in 2 Days)
+    ```  
+  - Styles: background `#E6F4EA`, border-radius `12px`, padding `12px`, icon at left.  
+- **Quick Actions**:  
+  - Component: `QuickActionsGrid.jsx`  
+  - 2×2 grid of `<Card />` buttons with icons & labels:  
+    - Send Money (`send-money.svg`)  
+    - Mobile Load (`mobile-load.svg`)  
+    - Pay Bill (`bill.svg`)  
+    - Create (`create.svg`)  
+  - Card style: white background, 12px padding, center-aligned icon and text.  
+- **Offers Card**:  
+  - Component: `OfferCard.jsx`  
+  - Static card below quick actions. Icon `offer.svg`, text:  
+    ```
+    Limited Offer: 5% cashback on groceries!
+    ```  
+  - Styles: background `#FFF9E6`, border-radius `12px`, padding `12px`.
+
+5. **Budget Tab – `pages/Budget.jsx`**  
+- **Header**: “Budget Dashboard” with a “Set Budget” button (static).  
+- **Total Summary**:  
+  ```
+  Total Budget: ₨ 25,000
+  Spent: ₨ 18,500
+  Remaining: ₨ 6,500
+  ```  
+- **Category Rows**:  
+  - Component: `BudgetCategoryRow.jsx`  
+  - For each category (Groceries, Fuel, Utilities, Entertainment), display:  
+    - Label (16px, weight 500)  
+    - Text: “₨ spent / ₨ budget”  
+    - Progress bar:  
+      - Under-budget: green fill (`#A7C638`),  
+      - Over-budget: red fill (`#E74C3C`)  
+    - Example mock data:  
+      - Groceries: 3000/5000 (60%)  
+      - Fuel: 7500/7000 (107%)  
+      - Utilities: 2000/3000 (67%)  
+      - Entertainment: 1500/2000 (75%)  
+- **Pie Chart (optional)**:  
+  - Use Chart.js or similar. Place in a `Card.jsx` below the rows to show category breakdown.
+
+6. **AI Assistant Chat Interface – `components/ChatDrawer.jsx`**  
+- Bottom drawer modal overlay.  
+- Header: “Easypaisa AI Assistant” (16px, weight 600).  
+- Conversation area: static messages:  
+  ```
+  Assistant: Hello! I am Easypaisa Assistant. How can I help?
+  ```  
+- Quick-reply buttons:  
+  - “What did I spend most on this month?”  
+  - “Suggest ways to save”  
+  - “Show cashback offers”  
+  - “Remind me to pay bills”  
+- Input field at bottom (non-functional).  
+- Styles: white background, border-top-radius `12px`, shadow.
+
+7. **Responsiveness**  
+- **Mobile-First CSS**: default layout stacks vertically.  
+- **Media Query @ 768px**:  
+  - NavBar: switch to sidebar (`position: fixed; left: 0; top: 0; height: 100vh; width: 80px; flex-direction: column;`)  
+  - Content: add left margin equal to sidebar width.  
+  - Cards: increase padding and font-size slightly.
+
+8. **Mock Data Implementation**  
+- In each page/component, import a `mockData.js` file exporting JS objects/arrays.  
+- Pass data as props. E.g.:  
+  ```js
+  // mockData.js
+  export const walletBalance = 12450.00;
+  export const suggestions = [{ icon: 'bill.svg', title: 'Pay Electricity Bill', subtitle: 'Due in 2 Days' }];
+  export const quickActions = [ { icon: 'send-money.svg', label: 'Send Money' }, … ];
+  export const offers = [{ icon: 'offer.svg', text: '5% cashback on groceries!' }];
+  export const budgets = [
+    { category: 'Groceries', spent: 3000, limit: 5000 },
+    …
+  ];
+  ```
+- Use these in your React components.
+
+9. **CSS Variables & Global Styles**  
+- `styles/variables.css`:  
+  ```css
+  :root {
+    --color-primary: #A7C638;
+    --color-text: #333333;
+    --color-bg-light: #F5F5F5;
+    --font-family: 'Poppins', sans-serif;
+  }
+  ```  
+- `styles/global.css`: base reset, box-sizing, body font, margin/padding reset.
+
+10. **Final Output**  
+ - A ready-to-run Replit project with the above folder structure.  
+ - All components implemented as modular React `.jsx` files (or equivalent HTML/CSS/JS).  
+ - Accurate brand styling, icons, fonts, and mock data for a pixel-perfect Easypaisa clone.  
+ - Fully responsive design adapting between mobile and desktop views.
+
+---
+
+**Implementation Note:**  
+Providing exact hex codes, font names, SVG asset filenames, and a clear directory structure ensures Replit AI produces code matching Easypaisa’s style guide precisely. Copy and paste this entire prompt into Replit’s AI to scaffold your static UI.
