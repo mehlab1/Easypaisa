@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easypaisa - Mobile Wallet & Digital Payments</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'easypaisa-green': '#A7C638',
+                        'easypaisa-dark-green': '#006A36',
+                        'easypaisa-gradient-end': '#008A4F',
+                        'easypaisa-light-green': '#E6F4EA',
+                        'easypaisa-offer': '#FFF9E6',
+                        'easypaisa-text': '#333333',
+                    },
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif'],
+                    },
+                    backgroundImage: {
+                        'easypaisa-gradient': 'linear-gradient(135deg, #006A36 0%, #008A4F 100%)',
+                    }
+                }
+            }
+        };
+    </script>
+    <style>
+        .carousel-container {
+            scroll-behavior: smooth;
+        }
+        .carousel-container::-webkit-scrollbar {
+            display: none;
+        }
+        .carousel-container {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-poppins">
+    <!-- @COMPONENT: AppContainer -->
+    <div class="min-h-screen bg-gray-50">
+        
+        <!-- @COMPONENT: DesktopSidebar - Hidden on mobile, visible on desktop -->
+        <div class="hidden md:block fixed left-0 top-0 h-full w-20 bg-white shadow-md z-40">
+            <div class="flex flex-col items-center py-6 h-full">
+                <!-- Logo Area -->
+                <div class="mb-8">
+                    <div class="w-10 h-10 bg-easypaisa-gradient rounded-full flex items-center justify-center">
+                        <i class="fas fa-wallet text-white text-lg"></i>
+                    </div>
+                </div>
+                
+                <!-- Navigation Items -->
+                <nav class="flex flex-col space-y-6 flex-1">
+                    <!-- @MAP: navigationItems.map(item => ( -->
+                    <button data-nav="home" class="flex flex-col items-center space-y-1 text-easypaisa-green">
+                        <i class="fas fa-home text-xl"></i>
+                        <span class="text-xs">Home</span>
+                    </button>
+                    <button data-nav="cash-points" class="flex flex-col items-center space-y-1 text-gray-400 hover:text-easypaisa-green">
+                        <i class="fas fa-map-marker-alt text-xl"></i>
+                        <span class="text-xs">Cash Points</span>
+                    </button>
+                    <button data-nav="qr" class="flex flex-col items-center space-y-1 text-gray-400 hover:text-easypaisa-green">
+                        <div class="w-12 h-12 bg-easypaisa-green rounded-full flex items-center justify-center -mt-2">
+                            <i class="fas fa-qrcode text-white text-lg"></i>
+                        </div>
+                    </button>
+                    <button data-nav="promotions" class="flex flex-col items-center space-y-1 text-gray-400 hover:text-easypaisa-green">
+                        <i class="fas fa-gift text-xl"></i>
+                        <span class="text-xs">Promotions</span>
+                    </button>
+                    <button data-nav="account" class="flex flex-col items-center space-y-1 text-gray-400 hover:text-easypaisa-green">
+                        <i class="fas fa-user text-xl"></i>
+                        <span class="text-xs">My Account</span>
+                    </button>
+                    <!-- @END_MAP )) -->
+                </nav>
+            </div>
+        </div>
+
+        <!-- @COMPONENT: MainContent -->
+        <div class="md:ml-20 min-h-screen pb-20 md:pb-0">
+            
+            <!-- @COMPONENT: HomeScreen -->
+            <div id="home-screen" class="block">
+                <!-- @COMPONENT: GradientHeader -->
+                <div class="bg-easypaisa-gradient h-32 md:h-40 relative px-4 pt-8">
+                    <div class="flex justify-between items-start mb-6">
+                        <div>
+                            <p class="text-white/80 text-sm">easypaisa Account</p>
+                            <h1 class="text-white text-xl font-semibold" data-bind="user.name" data-mock="true">Ahmad Khan</h1>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <div class="flex items-center space-x-1">
+                                <i class="fas fa-coins text-yellow-400"></i>
+                                <span class="text-white text-sm">My Rewards</span>
+                            </div>
+                            <button data-event="click:openChatDrawer" class="text-white">
+                                <i class="fas fa-robot text-xl"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- @COMPONENT: BalanceCard -->
+                <div class="px-4 -mt-8 relative z-10">
+                    <div class="bg-white rounded-xl p-6 shadow-lg">
+                        <div class="flex justify-between items-center mb-4">
+                            <h2 class="text-easypaisa-text font-medium">Wallet Balance</h2>
+                            <button data-event="click:toggleBalanceVisibility">
+                                <i class="fas fa-eye text-gray-400"></i>
+                            </button>
+                        </div>
+                        <div class="text-3xl font-bold text-easypaisa-text mb-6" data-bind="wallet.balance" data-mock="true">
+                            ₨ 12,450.00
+                        </div>
+                        <div class="flex space-x-3">
+                            <button class="flex-1 border border-white text-white bg-transparent rounded-full py-3 px-4 font-medium text-sm hover:bg-white/10 transition-colors">
+                                Upgrade Account
+                            </button>
+                            <button class="flex-1 bg-white text-easypaisa-green rounded-full py-3 px-4 font-medium text-sm hover:bg-gray-50 transition-colors">
+                                Add Cash
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- @COMPONENT: SuggestionCard -->
+                <div class="px-4 mt-6">
+                    <div class="bg-easypaisa-light-green rounded-xl p-4 flex items-center space-x-3" data-mock="true">
+                        <div class="w-10 h-10 bg-easypaisa-green/20 rounded-full flex items-center justify-center">
+                            <i class="fas fa-file-invoice-dollar text-easypaisa-green"></i>
+                        </div>
+                        <div class="flex-1">
+                            <p class="text-sm font-medium text-easypaisa-text">Suggested for You</p>
+                            <p class="text-xs text-gray-600">Pay Electricity Bill (Due in 2 Days)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- @COMPONENT: QuickActionsGrid -->
+                <div class="px-4 mt-6">
+                    <h3 class="text-lg font-semibold text-easypaisa-text mb-4">Quick Actions</h3>
+                    <div class="carousel-container flex space-x-4 overflow-x-auto md:grid md:grid-cols-4 md:gap-4 md:overflow-visible">
+                        <!-- @MAP: quickActions.map(action => ( -->
+                        <div class="min-w-[140px] md:min-w-0 bg-white rounded-xl p-4 text-center shadow-sm flex-shrink-0" data-mock="true">
+                            <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                                <i class="fas fa-paper-plane text-blue-500"></i>
+                            </div>
+                            <p class="text-sm font-medium text-easypaisa-text">Send Money</p>
+                        </div>
+                        <div class="min-w-[140px] md:min-w-0 bg-white rounded-xl p-4 text-center shadow-sm flex-shrink-0" data-mock="true">
+                            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                                <i class="fas fa-mobile-alt text-green-500"></i>
+                            </div>
+                            <p class="text-sm font-medium text-easypaisa-text">Mobile Load</p>
+                        </div>
+                        <div class="min-w-[140px] md:min-w-0 bg-white rounded-xl p-4 text-center shadow-sm flex-shrink-0" data-mock="true">
+                            <div class="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                                <i class="fas fa-file-invoice text-teal-500"></i>
+                            </div>
+                            <p class="text-sm font-medium text-easypaisa-text">Pay Bills</p>
+                        </div>
+                        <div class="min-w-[140px] md:min-w-0 bg-white rounded-xl p-4 text-center shadow-sm flex-shrink-0" data-mock="true">
+                            <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                                <i class="fas fa-plus text-purple-500"></i>
+                            </div>
+                            <p class="text-sm font-medium text-easypaisa-text">Create</p>
+                        </div>
+                        <!-- @END_MAP )) -->
+                    </div>
+                </div>
+
+                <!-- @COMPONENT: MoreWithEasypaisa -->
+                <div class="px-4 mt-8">
+                    <h3 class="text-lg font-semibold text-easypaisa-text mb-4">More with easypaisa</h3>
+                    <div class="carousel-container flex space-x-4 overflow-x-auto md:grid md:grid-cols-6 md:gap-4 md:overflow-visible">
+                        <!-- @MAP: moreServices.map(service => ( -->
+                        <div class="min-w-[80px] flex-shrink-0 text-center" data-mock="true">
+                            <div class="w-14 h-14 bg-orange-100 rounded-xl flex items-center justify-center mx-auto mb-2">
+                                <i class="fas fa-mobile text-orange-500 text-lg"></i>
+                            </div>
+                            <p class="text-xs text-gray-600">easyload</p>
+                        </div>
+                        <div class="min-w-[80px] flex-shrink-0 text-center" data-mock="true">
+                            <div class="w-14 h-14 bg-red-100 rounded-xl flex items-center justify-center mx-auto mb-2">
+                                <i class="fas fa-hand-holding-usd text-red-500 text-lg"></i>
+                            </div>
+                            <p class="text-xs text-gray-600">easycash-loan</p>
+                        </div>
+                        <div class="min-w-[80px] flex-shrink-0 text-center" data-mock="true">
+                            <div class="w-14 h-14 bg-green-100 rounded-xl flex items-center justify-center mx-auto mb-2">
+                                <i class="fas fa-piggy-bank text-green-500 text-lg"></i>
+                            </div>
+                            <p class="text-xs text-gray-600">savings-pocket</p>
+                        </div>
+                        <div class="min-w-[80px] flex-shrink-0 text-center" data-mock="true">
+                            <div class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mx-auto mb-2">
+                                <i class="fas fa-university text-blue-500 text-lg"></i>
+                            </div>
+                            <p class="text-xs text-gray-600">easybankuk</p>
+                        </div>
+                        <div class="min-w-[80px] flex-shrink-0 text-center" data-mock="true">
+                            <div class="w-14 h-14 bg-purple-100 rounded-xl flex items-center justify-center mx-auto mb-2">
+                                <i class="fas fa-graduation-cap text-purple-500 text-lg"></i>
+                            </div>
+                            <p class="text-xs text-gray-600">easycampus</p>
+                        </div>
+                        <div class="min-w-[80px] flex-shrink-0 text-center" data-mock="true">
+                            <div class="w-14 h-14 bg-yellow-100 rounded-xl flex items-center justify-center mx-auto mb-2">
+                                <i class="fas fa-coins text-yellow-500 text-lg"></i>
+                            </div>
+                            <p class="text-xs text-gray-600">easygold</p>
+                        </div>
+                        <!-- @END_MAP )) -->
+                    </div>
+                    <!-- Carousel dots for mobile -->
+                    <div class="flex justify-center space-x-2 mt-4 md:hidden">
+                        <div class="w-2 h-2 bg-easypaisa-green rounded-full"></div>
+                        <div class="w-2 h-2 bg-gray-300 rounded-full"></div>
+                        <div class="w-2 h-2 bg-gray-300 rounded-full"></div>
+                    </div>
+                </div>
+
+                <!-- @COMPONENT: OfferCard -->
+                <div class="px-4 mt-6 mb-8">
+                    <div class="bg-easypaisa-offer rounded-xl p-4 flex items-center space-x-3" data-mock="true">
+                        <div class="w-10 h-10 bg-yellow-200 rounded-full flex items-center justify-center">
+                            <i class="fas fa-gift text-yellow-600"></i>
+                        </div>
+                        <div class="flex-1">
+                            <p class="text-sm font-medium text-easypaisa-text">Limited Offer: 5% cashback on groceries!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- @COMPONENT: BudgetScreen -->
+            <div id="budget-screen" class="hidden">
+                <div class="px-4 py-6">
+                    <!-- Header -->
+                    <div class="flex justify-between items-center mb-6">
+                        <h1 class="text-2xl font-bold text-easypaisa-text">Budget Dashboard</h1>
+                        <button class="bg-easypaisa-green text-white px-4 py-2 rounded-full text-sm font-medium">
+                            Set Budget
+                        </button>
+                    </div>
+
+                    <!-- @COMPONENT: BudgetSummary -->
+                    <div class="bg-white rounded-xl p-6 shadow-sm mb-6" data-mock="true">
+                        <div class="grid grid-cols-3 gap-4 text-center">
+                            <div>
+                                <p class="text-sm text-gray-600">Total Budget</p>
+                                <p class="text-xl font-bold text-easypaisa-text">₨ 25,000</p>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-600">Spent</p>
+                                <p class="text-xl font-bold text-red-500">₨ 18,500</p>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-600">Remaining</p>
+                                <p class="text-xl font-bold text-easypaisa-green">₨ 6,500</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- @COMPONENT: BudgetCategoryRows -->
+                    <div class="space-y-4">
+                        <!-- @MAP: budgetCategories.map(category => ( -->
+                        <div class="bg-white rounded-xl p-4 shadow-sm" data-mock="true">
+                            <div class="flex justify-between items-center mb-2">
+                                <h3 class="font-medium text-easypaisa-text">Groceries</h3>
+                                <span class="text-sm text-gray-600">₨ 3,000 / ₨ 5,000</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-easypaisa-green h-2 rounded-full" style="width: 60%"></div>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-xl p-4 shadow-sm" data-mock="true">
+                            <div class="flex justify-between items-center mb-2">
+                                <h3 class="font-medium text-easypaisa-text">Fuel</h3>
+                                <span class="text-sm text-gray-600">₨ 7,500 / ₨ 7,000</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-red-500 h-2 rounded-full" style="width: 107%"></div>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-xl p-4 shadow-sm" data-mock="true">
+                            <div class="flex justify-between items-center mb-2">
+                                <h3 class="font-medium text-easypaisa-text">Utilities</h3>
+                                <span class="text-sm text-gray-600">₨ 2,000 / ₨ 3,000</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-easypaisa-green h-2 rounded-full" style="width: 67%"></div>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-xl p-4 shadow-sm" data-mock="true">
+                            <div class="flex justify-between items-center mb-2">
+                                <h3 class="font-medium text-easypaisa-text">Entertainment</h3>
+                                <span class="text-sm text-gray-600">₨ 1,500 / ₨ 2,000</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-easypaisa-green h-2 rounded-full" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <!-- @END_MAP )) -->
+                    </div>
+
+                    <!-- @COMPONENT: BudgetChart -->
+                    <div class="bg-white rounded-xl p-6 shadow-sm mt-6">
+                        <h3 class="font-semibold text-easypaisa-text mb-4">Category Breakdown</h3>
+                        <!-- Placeholder for Chart.js implementation -->
+                        <div class="h-64 bg-gray-50 rounded-lg flex items-center justify-center">
+                            <p class="text-gray-500"><!-- @FUNCTIONALITY: Implement Chart.js pie chart here --></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- @COMPONENT: MobileBottomNavigation - Hidden on desktop -->
+        <div class="md:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 px-4 py-2 z-30">
+            <div class="flex justify-around items-center">
+                <button data-nav="home" class="flex flex-col items-center space-y-1 text-easypaisa-green">
+                    <i class="fas fa-home text-xl"></i>
+                    <span class="text-xs">Home</span>
+                </button>
+                <button data-nav="cash-points" class="flex flex-col items-center space-y-1 text-gray-400">
+                    <i class="fas fa-map-marker-alt text-xl"></i>
+                    <span class="text-xs">Cash Points</span>
+                </button>
+                <button data-nav="qr" class="flex flex-col items-center -mt-4">
+                    <div class="w-14 h-14 bg-easypaisa-green rounded-full flex items-center justify-center shadow-lg">
+                        <i class="fas fa-qrcode text-white text-xl"></i>
+                    </div>
+                </button>
+                <button data-nav="promotions" class="flex flex-col items-center space-y-1 text-gray-400">
+                    <i class="fas fa-gift text-xl"></i>
+                    <span class="text-xs">Promotions</span>
+                </button>
+                <button data-nav="account" class="flex flex-col items-center space-y-1 text-gray-400">
+                    <i class="fas fa-user text-xl"></i>
+                    <span class="text-xs">My Account</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- @COMPONENT: ChatDrawer -->
+        <div id="chat-drawer" class="fixed inset-0 bg-black/50 z-50 hidden">
+            <div class="absolute bottom-0 left-0 right-0 bg-white rounded-t-xl max-h-[80vh] flex flex-col">
+                <!-- Header -->
+                <div class="flex justify-between items-center p-4 border-b">
+                    <h2 class="text-lg font-semibold text-easypaisa-text">Easypaisa AI Assistant</h2>
+                    <button data-event="click:closeChatDrawer" class="text-gray-400">
+                        <i class="fas fa-times text-xl"></i>
+                    </button>
+                </div>
+                
+                <!-- @COMPONENT: ChatMessages -->
+                <div class="flex-1 p-4 overflow-y-auto">
+                    <div class="bg-gray-100 rounded-lg p-3 mb-4 max-w-[80%]" data-mock="true">
+                        <p class="text-sm text-easypaisa-text">Hello! I am Easypaisa Assistant. How can I help?</p>
+                    </div>
+                </div>
+                
+                <!-- @COMPONENT: QuickReplyButtons -->
+                <div class="p-4 border-t">
+                    <div class="grid grid-cols-2 gap-2 mb-4">
+                        <button class="bg-gray-100 rounded-lg p-3 text-sm text-left hover:bg-gray-200 transition-colors" data-mock="true">
+                            What did I spend most on this month?
+                        </button>
+                        <button class="bg-gray-100 rounded-lg p-3 text-sm text-left hover:bg-gray-200 transition-colors" data-mock="true">
+                            Suggest ways to save
+                        </button>
+                        <button class="bg-gray-100 rounded-lg p-3 text-sm text-left hover:bg-gray-200 transition-colors" data-mock="true">
+                            Show cashback offers
+                        </button>
+                        <button class="bg-gray-100 rounded-lg p-3 text-sm text-left hover:bg-gray-200 transition-colors" data-mock="true">
+                            Remind me to pay bills
+                        </button>
+                    </div>
+                    
+                    <!-- Input Field -->
+                    <div class="flex space-x-2">
+                        <input type="text" placeholder="Type your message..." class="flex-1 border border-gray-300 rounded-full px-4 py-2 text-sm focus:outline-none focus:border-easypaisa-green">
+                        <button class="bg-easypaisa-green text-white rounded-full p-2 w-10 h-10 flex items-center justify-center">
+                            <i class="fas fa-paper-plane text-sm"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- @END_COMPONENT: AppContainer -->
+
+    <script>
+        (function() {
+            // TODO: Implement navigation state management, API calls for real data
+            
+            // Navigation handling
+            function handleNavigation(target) {
+                // Hide all screens
+                document.getElementById('home-screen').classList.add('hidden');
+                document.getElementById('budget-screen').classList.add('hidden');
+                
+                // Update navigation active states
+                document.querySelectorAll('[data-nav]').forEach(nav => {
+                    nav.classList.remove('text-easypaisa-green');
+                    nav.classList.add('text-gray-400');
+                });
+                
+                // Show target screen and update active nav
+                if (target === 'home') {
+                    document.getElementById('home-screen').classList.remove('hidden');
+                } else if (target === 'budget') {
+                    document.getElementById('budget-screen').classList.remove('hidden');
+                }
+                
+                // Update active navigation state
+                document.querySelectorAll(`[data-nav="${target}"]`).forEach(nav => {
+                    nav.classList.remove('text-gray-400');
+                    nav.classList.add('text-easypaisa-green');
+                });
+            }
+
+            // Chat drawer handling
+            function openChatDrawer() {
+                document.getElementById('chat-drawer').classList.remove('hidden');
+            }
+
+            function closeChatDrawer() {
+                document.getElementById('chat-drawer').classList.add('hidden');
+            }
+
+            // Event listeners
+            document.addEventListener('click', function(e) {
+                const navButton = e.target.closest('[data-nav]');
+                if (navButton) {
+                    const target = navButton.getAttribute('data-nav');
+                    if (target === 'budget') {
+                        handleNavigation('budget');
+                    } else if (target === 'home') {
+                        handleNavigation('home');
+                    }
+                    // TODO: Implement other navigation targets
+                }
+
+                // Chat drawer controls
+                if (e.target.closest('[data-event="click:openChatDrawer"]')) {
+                    openChatDrawer();
+                }
+                if (e.target.closest('[data-event="click:closeChatDrawer"]') || 
+                    (e.target.id === 'chat-drawer' && !e.target.closest('.bg-white'))) {
+                    closeChatDrawer();
+                }
+            });
+
+            // Initialize with home screen
+            handleNavigation('home');
+        })();
+    </script>
+</body>
+</html>

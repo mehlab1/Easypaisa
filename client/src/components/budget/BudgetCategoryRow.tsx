@@ -22,18 +22,14 @@ export default function BudgetCategoryRow({ category }: BudgetCategoryRowProps) 
           ₨ {category.spent.toLocaleString()} / ₨ {category.limit.toLocaleString()}
         </span>
       </div>
-      <Progress 
-        value={Math.min(category.percentage, 100)} 
-        className="w-full h-2"
-        style={{
-          backgroundColor: '#e5e7eb'
-        }}
-      />
-      <style jsx>{`
-        .progress-indicator {
-          background-color: ${category.isOverBudget ? '#ef4444' : '#A7C638'};
-        }
-      `}</style>
+      <div className="w-full bg-gray-200 rounded-full h-2">
+        <div 
+          className={`h-2 rounded-full transition-all duration-300 ${
+            category.isOverBudget ? 'bg-red-500' : 'bg-[#A7C638]'
+          }`}
+          style={{ width: `${Math.min(category.percentage, 100)}%` }}
+        />
+      </div>
     </Card>
   );
 }

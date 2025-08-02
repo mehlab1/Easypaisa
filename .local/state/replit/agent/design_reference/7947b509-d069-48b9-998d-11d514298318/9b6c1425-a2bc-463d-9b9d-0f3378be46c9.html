@@ -1,0 +1,456 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easypaisa - Digital Wallet</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#A7C638',
+                        'text-dark': '#333333',
+                        'bg-light': '#F5F5F5',
+                        'success': '#A7C638',
+                        'danger': '#E74C3C',
+                        'info-bg': '#E6F4EA',
+                        'offer-bg': '#FFF9E6'
+                    },
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif']
+                    },
+                    borderRadius: {
+                        'card': '12px'
+                    }
+                }
+            }
+        };
+    </script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .card-shadow {
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .nav-item.active {
+            color: #A7C638;
+        }
+        
+        .nav-item.active::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 20px;
+            height: 2px;
+            background-color: #A7C638;
+            border-radius: 1px;
+        }
+        
+        .progress-bar {
+            transition: width 0.3s ease;
+        }
+        
+        .chat-drawer {
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+        
+        .chat-drawer.open {
+            transform: translateY(0);
+        }
+        
+        .sidebar-hidden {
+            transform: translateX(-100%);
+        }
+        
+        @media (min-width: 768px) {
+            .mobile-nav {
+                display: none;
+            }
+            
+            .desktop-sidebar {
+                display: flex !important;
+            }
+            
+            .main-content {
+                margin-left: 80px;
+            }
+        }
+        
+        @media (max-width: 767px) {
+            .desktop-sidebar {
+                display: none;
+            }
+            
+            .main-content {
+                padding-bottom: 80px;
+            }
+        }
+    </style>
+</head>
+<body class="bg-bg-light font-poppins">
+    <!-- @COMPONENT: DesktopSidebar -->
+    <nav class="desktop-sidebar hidden fixed left-0 top-0 h-screen w-20 bg-white card-shadow flex-col items-center py-6 z-50">
+        <div class="mb-8">
+            <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
+                <i class="fas fa-wallet text-white text-lg"></i>
+            </div>
+        </div>
+        
+        <div class="flex flex-col space-y-6">
+            <a href="#" class="nav-item active relative flex flex-col items-center py-2" data-page="home">
+                <i class="fas fa-home text-xl mb-1"></i>
+                <span class="text-xs">Home</span>
+            </a>
+            <a href="#" class="nav-item relative flex flex-col items-center py-2 text-gray-500 hover:text-primary" data-page="payments">
+                <i class="fas fa-credit-card text-xl mb-1"></i>
+                <span class="text-xs">Payments</span>
+            </a>
+            <a href="#" class="nav-item relative flex flex-col items-center py-2 text-gray-500 hover:text-primary" data-page="create">
+                <i class="fas fa-plus-circle text-xl mb-1"></i>
+                <span class="text-xs">Create</span>
+            </a>
+            <a href="#" class="nav-item relative flex flex-col items-center py-2 text-gray-500 hover:text-primary" data-page="budget">
+                <i class="fas fa-piggy-bank text-xl mb-1"></i>
+                <span class="text-xs">Budget</span>
+            </a>
+            <a href="#" class="nav-item relative flex flex-col items-center py-2 text-gray-500 hover:text-primary" data-page="settings">
+                <i class="fas fa-cog text-xl mb-1"></i>
+                <span class="text-xs">Settings</span>
+            </a>
+        </div>
+    </nav>
+    <!-- @END_COMPONENT: DesktopSidebar -->
+
+    <!-- @COMPONENT: MainContent -->
+    <main class="main-content min-h-screen">
+        <!-- @COMPONENT: HomePage [default visible] -->
+        <div id="home-page" class="page-content p-4">
+            <!-- Header with AI Assistant -->
+            <div class="flex justify-between items-center mb-6">
+                <h1 class="text-2xl font-semibold text-text-dark">Welcome Back!</h1>
+                <button id="ai-assistant-btn" class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white hover:bg-opacity-90 transition-colors">
+                    <i class="fas fa-robot text-lg"></i>
+                </button>
+            </div>
+
+            <!-- @COMPONENT: WalletBalanceCard -->
+            <div class="bg-white rounded-card p-4 card-shadow mb-6 text-center">
+                <p class="text-gray-600 text-sm mb-2">Wallet Balance</p>
+                <p class="text-3xl font-semibold text-text-dark" data-bind="walletBalance">₨ 12,450.00</p>
+            </div>
+            <!-- @END_COMPONENT: WalletBalanceCard -->
+
+            <!-- @COMPONENT: SuggestionCard -->
+            <div class="bg-info-bg rounded-card p-3 mb-6 flex items-center" data-mock="true">
+                <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center mr-3">
+                    <i class="fas fa-file-invoice text-white"></i>
+                </div>
+                <div>
+                    <p class="text-sm font-medium text-text-dark">Suggested for You</p>
+                    <p class="text-xs text-gray-600">Pay Electricity Bill (Due in 2 Days)</p>
+                </div>
+            </div>
+            <!-- @END_COMPONENT: SuggestionCard -->
+
+            <!-- @COMPONENT: QuickActionsGrid -->
+            <div class="mb-6">
+                <h2 class="text-lg font-semibold text-text-dark mb-4">Quick Actions</h2>
+                <div class="grid grid-cols-2 gap-3">
+                    <button class="bg-white rounded-card p-4 card-shadow text-center hover:shadow-md transition-shadow" data-action="send-money">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-2">
+                            <i class="fas fa-paper-plane text-blue-500 text-lg"></i>
+                        </div>
+                        <p class="text-sm font-medium text-text-dark">Send Money</p>
+                    </button>
+                    <button class="bg-white rounded-card p-4 card-shadow text-center hover:shadow-md transition-shadow" data-action="mobile-load">
+                        <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-2">
+                            <i class="fas fa-mobile-alt text-green-500 text-lg"></i>
+                        </div>
+                        <p class="text-sm font-medium text-text-dark">Mobile Load</p>
+                    </button>
+                    <button class="bg-white rounded-card p-4 card-shadow text-center hover:shadow-md transition-shadow" data-action="pay-bill">
+                        <div class="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-2">
+                            <i class="fas fa-file-invoice-dollar text-yellow-500 text-lg"></i>
+                        </div>
+                        <p class="text-sm font-medium text-text-dark">Pay Bill</p>
+                    </button>
+                    <button class="bg-white rounded-card p-4 card-shadow text-center hover:shadow-md transition-shadow" data-action="create">
+                        <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-2">
+                            <i class="fas fa-plus text-purple-500 text-lg"></i>
+                        </div>
+                        <p class="text-sm font-medium text-text-dark">Create</p>
+                    </button>
+                </div>
+            </div>
+            <!-- @END_COMPONENT: QuickActionsGrid -->
+
+            <!-- @COMPONENT: OfferCard -->
+            <div class="bg-offer-bg rounded-card p-3 flex items-center" data-mock="true">
+                <div class="w-10 h-10 bg-orange-500 rounded-lg flex items-center justify-center mr-3">
+                    <i class="fas fa-gift text-white"></i>
+                </div>
+                <div>
+                    <p class="text-sm font-medium text-text-dark">Limited Offer</p>
+                    <p class="text-xs text-gray-600">5% cashback on groceries!</p>
+                </div>
+            </div>
+            <!-- @END_COMPONENT: OfferCard -->
+        </div>
+        <!-- @END_COMPONENT: HomePage -->
+
+        <!-- @COMPONENT: BudgetPage [hidden by default] -->
+        <div id="budget-page" class="page-content p-4 hidden">
+            <!-- Header -->
+            <div class="flex justify-between items-center mb-6">
+                <h1 class="text-2xl font-semibold text-text-dark">Budget Dashboard</h1>
+                <button class="bg-primary text-white px-4 py-2 rounded-card text-sm font-medium hover:bg-opacity-90 transition-colors">
+                    Set Budget
+                </button>
+            </div>
+
+            <!-- @COMPONENT: BudgetSummaryCard -->
+            <div class="bg-white rounded-card p-4 card-shadow mb-6">
+                <div class="grid grid-cols-3 gap-4 text-center">
+                    <div>
+                        <p class="text-xs text-gray-600 mb-1">Total Budget</p>
+                        <p class="text-lg font-semibold text-text-dark" data-bind="totalBudget">₨ 25,000</p>
+                    </div>
+                    <div>
+                        <p class="text-xs text-gray-600 mb-1">Spent</p>
+                        <p class="text-lg font-semibold text-danger" data-bind="totalSpent">₨ 18,500</p>
+                    </div>
+                    <div>
+                        <p class="text-xs text-gray-600 mb-1">Remaining</p>
+                        <p class="text-lg font-semibold text-success" data-bind="totalRemaining">₨ 6,500</p>
+                    </div>
+                </div>
+            </div>
+            <!-- @END_COMPONENT: BudgetSummaryCard -->
+
+            <!-- @COMPONENT: BudgetCategoryRows -->
+            <div class="space-y-4">
+                <!-- @MAP: budgetCategories.map(category => ( -->
+                <div class="bg-white rounded-card p-4 card-shadow" data-mock="true">
+                    <div class="flex justify-between items-center mb-2">
+                        <span class="font-medium text-text-dark">Groceries</span>
+                        <span class="text-sm text-gray-600">₨ 3,000 / ₨ 5,000</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2">
+                        <div class="bg-success h-2 rounded-full progress-bar" style="width: 60%"></div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-card p-4 card-shadow" data-mock="true">
+                    <div class="flex justify-between items-center mb-2">
+                        <span class="font-medium text-text-dark">Fuel</span>
+                        <span class="text-sm text-gray-600">₨ 7,500 / ₨ 7,000</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2">
+                        <div class="bg-danger h-2 rounded-full progress-bar" style="width: 107%"></div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-card p-4 card-shadow" data-mock="true">
+                    <div class="flex justify-between items-center mb-2">
+                        <span class="font-medium text-text-dark">Utilities</span>
+                        <span class="text-sm text-gray-600">₨ 2,000 / ₨ 3,000</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2">
+                        <div class="bg-success h-2 rounded-full progress-bar" style="width: 67%"></div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-card p-4 card-shadow" data-mock="true">
+                    <div class="flex justify-between items-center mb-2">
+                        <span class="font-medium text-text-dark">Entertainment</span>
+                        <span class="text-sm text-gray-600">₨ 1,500 / ₨ 2,000</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2">
+                        <div class="bg-success h-2 rounded-full progress-bar" style="width: 75%"></div>
+                    </div>
+                </div>
+                <!-- @END_MAP )) -->
+            </div>
+            <!-- @END_COMPONENT: BudgetCategoryRows -->
+        </div>
+        <!-- @END_COMPONENT: BudgetPage -->
+
+        <!-- Placeholder pages for other navigation items -->
+        <div id="payments-page" class="page-content p-4 hidden">
+            <div class="flex items-center justify-center h-64">
+                <div class="text-center">
+                    <i class="fas fa-credit-card text-6xl text-gray-300 mb-4"></i>
+                    <p class="text-gray-500">Payments page coming soon</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="create-page" class="page-content p-4 hidden">
+            <div class="flex items-center justify-center h-64">
+                <div class="text-center">
+                    <i class="fas fa-plus-circle text-6xl text-gray-300 mb-4"></i>
+                    <p class="text-gray-500">Create page coming soon</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="settings-page" class="page-content p-4 hidden">
+            <div class="flex items-center justify-center h-64">
+                <div class="text-center">
+                    <i class="fas fa-cog text-6xl text-gray-300 mb-4"></i>
+                    <p class="text-gray-500">Settings page coming soon</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- @END_COMPONENT: MainContent -->
+
+    <!-- @COMPONENT: MobileBottomNavigation -->
+    <nav class="mobile-nav fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 px-4 py-2 z-50">
+        <div class="flex justify-around items-center">
+            <a href="#" class="nav-item active relative flex flex-col items-center py-2" data-page="home">
+                <i class="fas fa-home text-xl mb-1"></i>
+                <span class="text-xs">Home</span>
+            </a>
+            <a href="#" class="nav-item relative flex flex-col items-center py-2 text-gray-500" data-page="payments">
+                <i class="fas fa-credit-card text-xl mb-1"></i>
+                <span class="text-xs">Payments</span>
+            </a>
+            <a href="#" class="nav-item relative flex flex-col items-center py-2 text-gray-500" data-page="create">
+                <i class="fas fa-plus-circle text-xl mb-1"></i>
+                <span class="text-xs">Create</span>
+            </a>
+            <a href="#" class="nav-item relative flex flex-col items-center py-2 text-gray-500" data-page="budget">
+                <i class="fas fa-piggy-bank text-xl mb-1"></i>
+                <span class="text-xs">Budget</span>
+            </a>
+            <a href="#" class="nav-item relative flex flex-col items-center py-2 text-gray-500" data-page="settings">
+                <i class="fas fa-cog text-xl mb-1"></i>
+                <span class="text-xs">Settings</span>
+            </a>
+        </div>
+    </nav>
+    <!-- @END_COMPONENT: MobileBottomNavigation -->
+
+    <!-- @COMPONENT: ChatDrawer -->
+    <div id="chat-drawer" class="chat-drawer fixed inset-x-0 bottom-0 bg-white rounded-t-card card-shadow z-50 max-h-96">
+        <div class="p-4">
+            <!-- Header -->
+            <div class="flex justify-between items-center mb-4">
+                <h3 class="text-lg font-semibold text-text-dark">Easypaisa AI Assistant</h3>
+                <button id="close-chat" class="text-gray-500 hover:text-text-dark">
+                    <i class="fas fa-times text-lg"></i>
+                </button>
+            </div>
+
+            <!-- Chat Messages -->
+            <div class="space-y-3 mb-4 max-h-40 overflow-y-auto">
+                <div class="bg-gray-100 rounded-card p-3 mr-8" data-mock="true">
+                    <p class="text-sm text-text-dark">Hello! I am Easypaisa Assistant. How can I help?</p>
+                </div>
+            </div>
+
+            <!-- Quick Reply Buttons -->
+            <div class="grid grid-cols-2 gap-2 mb-4">
+                <button class="bg-primary bg-opacity-10 text-primary text-xs p-2 rounded-card border border-primary hover:bg-opacity-20 transition-colors" data-mock="true">
+                    What did I spend most on?
+                </button>
+                <button class="bg-primary bg-opacity-10 text-primary text-xs p-2 rounded-card border border-primary hover:bg-opacity-20 transition-colors" data-mock="true">
+                    Suggest ways to save
+                </button>
+                <button class="bg-primary bg-opacity-10 text-primary text-xs p-2 rounded-card border border-primary hover:bg-opacity-20 transition-colors" data-mock="true">
+                    Show cashback offers
+                </button>
+                <button class="bg-primary bg-opacity-10 text-primary text-xs p-2 rounded-card border border-primary hover:bg-opacity-20 transition-colors" data-mock="true">
+                    Remind me to pay bills
+                </button>
+            </div>
+
+            <!-- Input Field -->
+            <div class="flex items-center space-x-2">
+                <input type="text" placeholder="Type your message..." class="flex-1 border border-gray-300 rounded-card px-3 py-2 text-sm focus:outline-none focus:border-primary" data-mock="true">
+                <button class="bg-primary text-white px-4 py-2 rounded-card hover:bg-opacity-90 transition-colors" data-mock="true">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- @END_COMPONENT: ChatDrawer -->
+
+    <script>
+        (function() {
+            // Navigation functionality
+            const navItems = document.querySelectorAll('.nav-item');
+            const pages = document.querySelectorAll('.page-content');
+            
+            function showPage(pageId) {
+                // Hide all pages
+                pages.forEach(page => page.classList.add('hidden'));
+                
+                // Show selected page
+                const targetPage = document.getElementById(pageId + '-page');
+                if (targetPage) {
+                    targetPage.classList.remove('hidden');
+                }
+                
+                // Update active nav item
+                navItems.forEach(item => item.classList.remove('active'));
+                document.querySelectorAll(`[data-page="${pageId}"]`).forEach(item => {
+                    item.classList.add('active');
+                });
+            }
+            
+            // Add click handlers to navigation items
+            navItems.forEach(item => {
+                item.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const pageId = item.getAttribute('data-page');
+                    showPage(pageId);
+                });
+            });
+            
+            // Chat drawer functionality
+            const aiAssistantBtn = document.getElementById('ai-assistant-btn');
+            const chatDrawer = document.getElementById('chat-drawer');
+            const closeChatBtn = document.getElementById('close-chat');
+            
+            aiAssistantBtn?.addEventListener('click', () => {
+                chatDrawer.classList.add('open');
+            });
+            
+            closeChatBtn?.addEventListener('click', () => {
+                chatDrawer.classList.remove('open');
+            });
+            
+            // Close chat drawer when clicking outside
+            chatDrawer?.addEventListener('click', (e) => {
+                if (e.target === chatDrawer) {
+                    chatDrawer.classList.remove('open');
+                }
+            });
+            
+            // Quick action button interactions
+            const quickActionBtns = document.querySelectorAll('[data-action]');
+            quickActionBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const action = btn.getAttribute('data-action');
+                    // TODO: Implement quick action functionality
+                    console.log(`Quick action clicked: ${action}`);
+                });
+            });
+            
+            // Initialize with home page visible
+            showPage('home');
+        })();
+    </script>
+</body>
+</html>
