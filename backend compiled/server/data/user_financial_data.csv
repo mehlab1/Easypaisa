@@ -1,0 +1,169 @@
+UserID,Date,Type,Amount (PKR),Category,Merchant/Source
+U001,2025-01-01,Income,54570.01,Salary,Freelance
+U001,2025-02-02,Income,65113.91,Salary,Company B
+U001,2025-03-01,Income,65759.0,Salary,Company B
+U001,2025-04-03,Income,55273.74,Salary,Company B
+U001,2025-05-02,Income,50001.53,Salary,Freelance
+U001,2025-06-03,Income,76124.15,Salary,Freelance
+U001,2025-02-26,Spending,6277.63,Food,KFC
+U001,2025-02-03,Spending,4852.3,Healthcare,Clinic
+U001,2025-03-09,Spending,1426.05,Food,KFC
+U001,2025-05-19,Spending,887.1,Education,Coursera
+U001,2025-03-02,Spending,3041.84,Entertainment,Cinepax
+U001,2025-01-01,Spending,1652.1,Healthcare,Pharmacy
+U001,2025-02-08,Spending,6400.43,Shopping,Chase Up
+U001,2025-04-12,Spending,3312.33,Food,McDonalds
+U001,2025-02-15,Spending,1836.56,Education,Coursera
+U001,2025-02-12,Spending,3040.17,Entertainment,Cinepax
+U001,2025-03-14,Spending,3061.8,Education,Coursera
+U001,2025-06-17,Spending,3907.27,Transport,Careem
+U001,2025-05-12,Spending,221.29,Food,KFC
+U001,2025-03-24,Spending,7861.54,Entertainment,Netflix
+U001,2025-05-15,Spending,474.65,Education,edX
+U001,2025-01-21,Spending,7805.07,Food,KFC
+U001,2025-04-12,Spending,706.19,Transport,Uber
+U001,2025-06-04,Spending,4093.13,Entertainment,Cinepax
+U001,2025-04-22,Spending,345.3,Education,Coursera
+U001,2025-04-18,Spending,4246.54,Shopping,Chase Up
+U001,2025-05-25,Spending,5437.93,Education,Coursera
+U001,2025-05-29,Spending,6733.21,Entertainment,Cinepax
+U001,2025-01-08,Spending,5505.53,Education,edX
+U001,2025-02-27,Spending,941.2,Education,Coursera
+U001,2025-04-09,Spending,1836.52,Transport,Careem
+U001,2025-05-01,Spending,5067.55,Education,Coursera
+U001,2025-06-14,Spending,5200.57,Healthcare,Pharmacy
+U001,2025-04-08,Spending,7899.86,Food,McDonalds
+U001,2025-01-27,Spending,6452.01,Education,edX
+U001,2025-04-17,Spending,2076.19,Healthcare,Clinic
+U001,2025-02-21,Spending,2763.36,Entertainment,Cinepax
+U001,2025-03-06,Spending,1329.78,Healthcare,Pharmacy
+U001,2025-02-18,Spending,1043.09,Entertainment,Netflix
+U001,2025-03-16,Spending,6754.64,Transport,Uber
+U001,2025-02-02,Spending,871.86,Utilities,K-Electric
+U001,2025-03-14,Spending,681.97,Food,McDonalds
+U001,2025-03-01,Spending,4688.62,Utilities,SNGPL
+U001,2025-05-27,Spending,1442.03,Education,edX
+U001,2025-05-24,Spending,655.26,Transport,Careem
+U001,2025-04-29,Spending,6113.04,Education,Coursera
+U001,2025-06-16,Spending,4139.12,Shopping,Daraz
+U001,2025-05-24,Spending,5197.32,Healthcare,Clinic
+U001,2025-03-08,Spending,5347.42,Food,Subway
+U001,2025-01-14,Spending,4248.06,Healthcare,Clinic
+U001,2025-05-11,Spending,4704.77,Education,edX
+U001,2025-01-01,Spending,2505.8,Shopping,Daraz
+U001,2025-03-13,Spending,2591.82,Education,edX
+U001,2025-04-17,Spending,1119.34,Transport,Careem
+U001,2025-06-13,Spending,5355.86,Entertainment,Cinepax
+U001,2025-01-28,Spending,2834.47,Education,Coursera
+U002,2025-01-02,Income,72678.9,Salary,Freelance
+U002,2025-02-01,Income,60155.41,Salary,Freelance
+U002,2025-03-02,Income,55462.59,Salary,Freelance
+U002,2025-04-01,Income,68701.8,Salary,Freelance
+U002,2025-05-02,Income,53949.39,Salary,Company B
+U002,2025-06-03,Income,67201.58,Salary,Company B
+U002,2025-01-16,Spending,6839.47,Education,Coursera
+U002,2025-01-05,Spending,5809.52,Education,Coursera
+U002,2025-04-24,Spending,5990.17,Utilities,K-Electric
+U002,2025-01-27,Spending,2311.33,Entertainment,Cinepax
+U002,2025-06-25,Spending,4920.13,Shopping,Chase Up
+U002,2025-03-23,Spending,2746.19,Food,Subway
+U002,2025-01-02,Spending,2795.15,Transport,Careem
+U002,2025-01-16,Spending,2684.91,Healthcare,Clinic
+U002,2025-05-22,Spending,3110.32,Food,McDonalds
+U002,2025-02-26,Spending,6808.98,Shopping,Daraz
+U002,2025-06-02,Spending,2350.35,Transport,Careem
+U002,2025-04-21,Spending,4235.92,Entertainment,Cinepax
+U002,2025-06-30,Spending,1739.33,Education,edX
+U002,2025-06-12,Spending,4758.97,Entertainment,Netflix
+U002,2025-02-23,Spending,4315.42,Shopping,Chase Up
+U002,2025-03-03,Spending,3537.04,Shopping,Chase Up
+U002,2025-05-30,Spending,4974.84,Shopping,Daraz
+U002,2025-05-05,Spending,3080.7,Shopping,Chase Up
+U002,2025-05-24,Spending,5016.81,Shopping,Chase Up
+U002,2025-05-31,Spending,3446.94,Transport,Careem
+U002,2025-04-01,Spending,325.13,Transport,Careem
+U002,2025-04-26,Spending,2653.79,Entertainment,Netflix
+U002,2025-01-25,Spending,3852.95,Shopping,Daraz
+U002,2025-06-24,Spending,6537.5,Shopping,Daraz
+U002,2025-05-09,Spending,383.55,Utilities,SNGPL
+U002,2025-06-01,Spending,4033.58,Healthcare,Pharmacy
+U002,2025-06-14,Spending,6509.39,Transport,Uber
+U002,2025-02-11,Spending,5891.82,Education,Coursera
+U002,2025-03-26,Spending,3298.55,Food,McDonalds
+U002,2025-03-09,Spending,7988.56,Healthcare,Pharmacy
+U002,2025-04-23,Spending,1317.34,Transport,Uber
+U002,2025-06-20,Spending,6917.91,Shopping,Daraz
+U002,2025-05-30,Spending,5620.63,Food,Subway
+U002,2025-03-09,Spending,6054.22,Food,McDonalds
+U002,2025-06-14,Spending,3466.96,Healthcare,Pharmacy
+U002,2025-03-07,Spending,2638.6,Healthcare,Clinic
+U002,2025-06-05,Spending,7571.35,Entertainment,Netflix
+U002,2025-05-02,Spending,6121.22,Food,KFC
+U002,2025-05-19,Spending,6173.19,Transport,Careem
+U002,2025-05-06,Spending,3434.26,Shopping,Daraz
+U002,2025-02-17,Spending,5334.8,Shopping,Chase Up
+U002,2025-04-22,Spending,3732.15,Shopping,Chase Up
+U002,2025-01-28,Spending,2463.31,Food,McDonalds
+U002,2025-06-21,Spending,6026.0,Entertainment,Cinepax
+U002,2025-02-20,Spending,1740.25,Utilities,SNGPL
+U002,2025-02-24,Spending,4481.9,Transport,Uber
+U002,2025-06-14,Spending,2473.12,Education,Coursera
+U002,2025-06-07,Spending,7370.8,Transport,Uber
+U002,2025-03-28,Spending,2250.92,Shopping,Daraz
+U002,2025-01-23,Spending,1195.96,Entertainment,Cinepax
+U003,2025-01-01,Income,79231.39,Salary,Freelance
+U003,2025-02-01,Income,57574.23,Salary,Company B
+U003,2025-03-02,Income,75522.74,Salary,Company A
+U003,2025-04-03,Income,67682.33,Salary,Company A
+U003,2025-05-03,Income,59778.31,Salary,Company B
+U003,2025-06-03,Income,54689.72,Salary,Freelance
+U003,2025-01-16,Spending,1138.19,Food,KFC
+U003,2025-04-04,Spending,3254.93,Healthcare,Pharmacy
+U003,2025-06-08,Spending,6683.94,Healthcare,Clinic
+U003,2025-04-16,Spending,2328.37,Transport,Careem
+U003,2025-04-12,Spending,2755.36,Food,Subway
+U003,2025-04-17,Spending,7894.35,Shopping,Daraz
+U003,2025-03-10,Spending,2351.83,Education,edX
+U003,2025-03-17,Spending,2464.53,Food,KFC
+U003,2025-05-20,Spending,7472.39,Healthcare,Pharmacy
+U003,2025-05-28,Spending,1909.37,Education,edX
+U003,2025-03-29,Spending,4363.0,Healthcare,Clinic
+U003,2025-03-09,Spending,1640.37,Entertainment,Netflix
+U003,2025-05-23,Spending,3488.75,Food,McDonalds
+U003,2025-06-30,Spending,2818.97,Utilities,K-Electric
+U003,2025-05-01,Spending,7223.6,Utilities,K-Electric
+U003,2025-05-13,Spending,6663.43,Education,edX
+U003,2025-02-27,Spending,2170.51,Food,Subway
+U003,2025-01-31,Spending,3327.54,Utilities,SNGPL
+U003,2025-05-14,Spending,1225.58,Food,Subway
+U003,2025-04-29,Spending,655.88,Shopping,Daraz
+U003,2025-03-31,Spending,1494.92,Shopping,Daraz
+U003,2025-03-20,Spending,986.47,Education,edX
+U003,2025-04-24,Spending,623.98,Shopping,Chase Up
+U003,2025-06-10,Spending,7945.35,Utilities,SNGPL
+U003,2025-04-24,Spending,2070.55,Shopping,Daraz
+U003,2025-06-19,Spending,5031.09,Food,KFC
+U003,2025-05-26,Spending,5439.68,Food,Subway
+U003,2025-04-20,Spending,7609.28,Healthcare,Clinic
+U003,2025-03-16,Spending,5499.88,Shopping,Daraz
+U003,2025-01-11,Spending,206.96,Shopping,Daraz
+U003,2025-04-19,Spending,5539.48,Utilities,K-Electric
+U003,2025-05-08,Spending,3148.03,Education,Coursera
+U003,2025-05-06,Spending,264.31,Education,Coursera
+U003,2025-01-01,Spending,2141.85,Shopping,Chase Up
+U003,2025-03-21,Spending,2276.24,Entertainment,Netflix
+U003,2025-01-06,Spending,2919.75,Education,edX
+U003,2025-02-09,Spending,7679.36,Entertainment,Netflix
+U003,2025-05-04,Spending,7765.08,Transport,Uber
+U003,2025-04-14,Spending,2467.35,Education,Coursera
+U003,2025-04-11,Spending,2174.07,Food,McDonalds
+U003,2025-02-07,Spending,7330.36,Education,Coursera
+U003,2025-02-01,Spending,3408.96,Utilities,K-Electric
+U003,2025-01-16,Spending,2543.12,Transport,Uber
+U003,2025-06-19,Spending,4670.46,Food,KFC
+U003,2025-01-05,Spending,7680.57,Food,McDonalds
+U003,2025-01-08,Spending,6246.41,Transport,Careem
+U003,2025-02-27,Spending,1669.2,Healthcare,Pharmacy
+U003,2025-06-13,Spending,918.03,Food,Subway
+U003,2025-02-16,Spending,6943.86,Food,Subway
+U003,2025-05-21,Spending,6145.83,Education,Coursera

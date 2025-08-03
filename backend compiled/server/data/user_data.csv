@@ -1,0 +1,1001 @@
+user_id,segment,impressions,clicks,conversions,churned
+1,Bill Payers,398,37,7,0
+2,Top-Ups,358,148,13,0
+3,Bill Payers,285,17,1,1
+4,Loan Seekers,495,157,36,0
+5,Loan Seekers,437,176,7,0
+6,Top-Ups,477,92,14,0
+7,Bill Payers,155,31,6,1
+8,Top-Ups,320,22,1,0
+9,Bill Payers,102,34,7,0
+10,Loan Seekers,394,157,11,1
+11,Top-Ups,338,73,11,0
+12,Top-Ups,342,115,40,0
+13,Bill Payers,91,15,5,0
+14,Top-Ups,456,132,39,0
+15,Loan Seekers,333,101,28,1
+16,Bill Payers,274,41,6,0
+17,Bill Payers,367,46,16,0
+18,Top-Ups,162,10,2,0
+19,Loan Seekers,489,29,9,0
+20,Bill Payers,209,48,7,0
+21,Bill Payers,147,37,11,0
+22,Loan Seekers,197,31,9,0
+23,Insurance Buyers,473,112,14,1
+24,Insurance Buyers,148,15,6,0
+25,Insurance Buyers,303,125,19,0
+26,Insurance Buyers,201,47,14,0
+27,Insurance Buyers,202,7,2,0
+28,Loan Seekers,210,12,1,1
+29,Top-Ups,177,43,4,1
+30,Bill Payers,487,186,51,0
+31,Top-Ups,66,26,6,0
+32,Insurance Buyers,398,93,35,1
+33,Bill Payers,177,31,4,0
+34,Bill Payers,153,44,18,1
+35,Bill Payers,362,101,13,0
+36,Loan Seekers,403,33,7,0
+37,Bill Payers,391,51,11,0
+38,Bill Payers,157,43,10,0
+39,Top-Ups,318,121,22,0
+40,Bill Payers,166,12,1,1
+41,Bill Payers,145,33,10,0
+42,Bill Payers,125,33,3,0
+43,Bill Payers,495,159,31,0
+44,Bill Payers,59,27,0,1
+45,Bill Payers,374,124,33,0
+46,Top-Ups,317,70,4,0
+47,Loan Seekers,291,82,20,1
+48,Bill Payers,245,68,4,1
+49,Bill Payers,406,133,42,0
+50,Bill Payers,62,17,3,0
+51,Bill Payers,446,174,62,1
+52,Insurance Buyers,388,87,23,0
+53,Insurance Buyers,193,59,4,0
+54,Insurance Buyers,284,99,26,0
+55,Loan Seekers,442,143,19,0
+56,Bill Payers,194,82,27,0
+57,Insurance Buyers,88,15,3,0
+58,Top-Ups,432,142,26,0
+59,Insurance Buyers,93,30,9,0
+60,Loan Seekers,96,28,6,0
+61,Insurance Buyers,490,218,40,0
+62,Top-Ups,185,32,7,1
+63,Top-Ups,131,26,6,1
+64,Bill Payers,54,3,3,0
+65,Bill Payers,112,25,3,0
+66,Loan Seekers,454,39,5,0
+67,Insurance Buyers,254,30,2,0
+68,Top-Ups,355,130,53,0
+69,Top-Ups,390,121,49,0
+70,Top-Ups,334,44,6,1
+71,Bill Payers,254,35,10,0
+72,Bill Payers,209,19,0,0
+73,Loan Seekers,454,120,43,0
+74,Loan Seekers,96,20,10,0
+75,Bill Payers,306,25,10,1
+76,Loan Seekers,77,13,1,0
+77,Top-Ups,160,59,19,0
+78,Loan Seekers,168,28,3,0
+79,Insurance Buyers,261,57,13,0
+80,Bill Payers,473,94,18,0
+81,Bill Payers,414,69,19,0
+82,Top-Ups,201,68,20,0
+83,Bill Payers,269,86,21,0
+84,Top-Ups,252,61,6,0
+85,Bill Payers,162,36,12,0
+86,Bill Payers,59,15,2,0
+87,Loan Seekers,378,105,19,1
+88,Top-Ups,285,66,7,1
+89,Top-Ups,109,34,2,0
+90,Top-Ups,428,94,26,0
+91,Top-Ups,337,69,13,1
+92,Bill Payers,358,117,40,0
+93,Bill Payers,280,71,21,0
+94,Loan Seekers,446,40,14,0
+95,Top-Ups,341,123,15,0
+96,Top-Ups,267,58,22,0
+97,Insurance Buyers,377,109,4,0
+98,Top-Ups,316,56,15,1
+99,Insurance Buyers,104,14,3,0
+100,Top-Ups,203,27,9,0
+101,Top-Ups,66,11,3,0
+102,Loan Seekers,393,69,7,0
+103,Insurance Buyers,410,32,13,0
+104,Loan Seekers,264,60,14,0
+105,Top-Ups,68,7,1,0
+106,Bill Payers,215,67,7,0
+107,Insurance Buyers,211,39,13,0
+108,Loan Seekers,492,98,30,0
+109,Top-Ups,340,33,7,0
+110,Insurance Buyers,56,17,4,1
+111,Top-Ups,131,55,7,0
+112,Bill Payers,310,60,18,1
+113,Top-Ups,130,53,2,0
+114,Top-Ups,408,45,15,0
+115,Bill Payers,91,20,6,0
+116,Loan Seekers,411,44,11,0
+117,Bill Payers,443,170,39,0
+118,Loan Seekers,341,98,25,1
+119,Top-Ups,359,80,3,0
+120,Loan Seekers,495,182,43,0
+121,Top-Ups,153,30,11,0
+122,Bill Payers,324,45,20,0
+123,Top-Ups,423,132,40,0
+124,Loan Seekers,65,21,8,0
+125,Top-Ups,186,17,5,0
+126,Loan Seekers,451,107,29,0
+127,Bill Payers,413,111,32,1
+128,Loan Seekers,351,66,15,1
+129,Insurance Buyers,315,24,7,0
+130,Bill Payers,425,69,1,1
+131,Bill Payers,354,57,16,0
+132,Insurance Buyers,368,143,25,0
+133,Insurance Buyers,112,18,0,0
+134,Loan Seekers,308,110,14,0
+135,Bill Payers,428,72,7,0
+136,Bill Payers,447,164,23,0
+137,Insurance Buyers,219,70,10,0
+138,Bill Payers,86,12,2,0
+139,Bill Payers,398,151,27,0
+140,Insurance Buyers,141,38,15,0
+141,Top-Ups,471,42,12,0
+142,Top-Ups,486,140,41,0
+143,Top-Ups,162,39,3,0
+144,Bill Payers,123,29,3,0
+145,Top-Ups,453,129,34,0
+146,Top-Ups,259,106,30,0
+147,Loan Seekers,183,21,0,0
+148,Insurance Buyers,148,27,6,0
+149,Top-Ups,71,10,1,0
+150,Insurance Buyers,406,118,46,0
+151,Loan Seekers,369,135,11,0
+152,Loan Seekers,76,29,5,0
+153,Insurance Buyers,436,41,11,0
+154,Bill Payers,481,99,17,0
+155,Bill Payers,121,28,10,0
+156,Top-Ups,266,98,16,0
+157,Insurance Buyers,209,11,1,1
+158,Insurance Buyers,402,90,2,0
+159,Loan Seekers,408,43,13,1
+160,Bill Payers,122,8,4,0
+161,Top-Ups,367,100,25,0
+162,Bill Payers,176,46,2,0
+163,Insurance Buyers,171,28,11,0
+164,Loan Seekers,349,80,17,0
+165,Bill Payers,381,55,20,0
+166,Top-Ups,493,42,7,1
+167,Loan Seekers,286,71,22,0
+168,Top-Ups,63,21,7,0
+169,Insurance Buyers,160,37,5,1
+170,Loan Seekers,498,145,34,0
+171,Bill Payers,315,86,29,0
+172,Bill Payers,333,24,7,0
+173,Top-Ups,205,61,4,0
+174,Top-Ups,84,23,4,0
+175,Loan Seekers,230,52,14,0
+176,Bill Payers,476,99,5,0
+177,Loan Seekers,424,42,3,1
+178,Bill Payers,242,98,23,0
+179,Bill Payers,125,14,6,1
+180,Top-Ups,353,91,30,0
+181,Insurance Buyers,122,8,1,1
+182,Insurance Buyers,68,25,8,1
+183,Loan Seekers,359,98,26,0
+184,Bill Payers,466,69,6,0
+185,Top-Ups,479,108,45,0
+186,Loan Seekers,353,95,22,1
+187,Loan Seekers,456,64,26,0
+188,Loan Seekers,190,31,3,0
+189,Top-Ups,340,78,22,0
+190,Bill Payers,312,87,21,0
+191,Bill Payers,85,12,3,0
+192,Loan Seekers,190,52,13,1
+193,Insurance Buyers,257,66,24,0
+194,Top-Ups,452,124,16,1
+195,Loan Seekers,199,13,4,0
+196,Bill Payers,490,106,23,0
+197,Insurance Buyers,237,74,30,0
+198,Top-Ups,213,23,2,0
+199,Bill Payers,179,46,7,0
+200,Loan Seekers,107,19,8,0
+201,Top-Ups,335,51,21,0
+202,Loan Seekers,155,12,3,1
+203,Top-Ups,193,29,2,0
+204,Loan Seekers,335,73,18,1
+205,Top-Ups,275,15,1,0
+206,Bill Payers,298,75,16,0
+207,Insurance Buyers,476,129,28,0
+208,Top-Ups,207,80,6,0
+209,Top-Ups,255,91,39,0
+210,Bill Payers,74,16,3,0
+211,Loan Seekers,61,23,4,0
+212,Loan Seekers,439,13,3,0
+213,Bill Payers,467,84,7,1
+214,Loan Seekers,148,14,1,1
+215,Top-Ups,309,121,27,0
+216,Insurance Buyers,111,34,5,0
+217,Insurance Buyers,232,38,7,0
+218,Bill Payers,114,22,4,0
+219,Loan Seekers,237,54,3,1
+220,Loan Seekers,131,27,5,1
+221,Insurance Buyers,154,15,7,0
+222,Bill Payers,291,24,6,0
+223,Insurance Buyers,249,43,12,1
+224,Bill Payers,57,1,0,0
+225,Loan Seekers,182,45,24,1
+226,Top-Ups,100,7,3,0
+227,Loan Seekers,417,156,48,0
+228,Top-Ups,127,15,5,0
+229,Loan Seekers,396,164,51,1
+230,Loan Seekers,202,37,15,0
+231,Loan Seekers,454,65,17,1
+232,Top-Ups,285,18,4,0
+233,Top-Ups,307,33,9,0
+234,Top-Ups,327,78,27,0
+235,Top-Ups,160,17,7,1
+236,Bill Payers,273,93,33,0
+237,Top-Ups,161,48,10,0
+238,Loan Seekers,467,158,35,0
+239,Top-Ups,276,29,0,0
+240,Loan Seekers,237,73,17,0
+241,Bill Payers,104,29,8,0
+242,Bill Payers,368,21,5,0
+243,Top-Ups,241,63,17,0
+244,Loan Seekers,300,90,16,1
+245,Insurance Buyers,173,33,2,0
+246,Top-Ups,247,53,7,1
+247,Top-Ups,470,99,31,0
+248,Insurance Buyers,468,90,11,0
+249,Insurance Buyers,463,70,8,1
+250,Insurance Buyers,449,142,10,0
+251,Loan Seekers,299,79,20,0
+252,Top-Ups,252,92,15,1
+253,Bill Payers,180,55,13,1
+254,Loan Seekers,210,18,4,0
+255,Bill Payers,110,13,4,0
+256,Top-Ups,247,94,23,0
+257,Insurance Buyers,484,150,24,0
+258,Top-Ups,497,98,37,0
+259,Top-Ups,165,59,26,0
+260,Loan Seekers,303,54,17,0
+261,Bill Payers,476,181,41,0
+262,Top-Ups,104,25,9,0
+263,Bill Payers,435,65,4,0
+264,Insurance Buyers,429,139,37,0
+265,Bill Payers,178,37,13,0
+266,Loan Seekers,74,2,0,0
+267,Insurance Buyers,314,110,17,1
+268,Bill Payers,262,27,5,0
+269,Loan Seekers,466,61,15,1
+270,Top-Ups,199,67,16,0
+271,Loan Seekers,96,14,3,0
+272,Top-Ups,53,16,1,0
+273,Bill Payers,191,66,7,0
+274,Insurance Buyers,268,63,17,0
+275,Bill Payers,79,26,1,0
+276,Insurance Buyers,199,66,24,0
+277,Insurance Buyers,112,29,8,0
+278,Loan Seekers,486,115,6,0
+279,Bill Payers,276,29,9,0
+280,Insurance Buyers,304,20,3,0
+281,Insurance Buyers,99,27,2,0
+282,Top-Ups,250,105,23,0
+283,Bill Payers,96,8,0,1
+284,Bill Payers,206,57,10,1
+285,Bill Payers,211,46,0,0
+286,Insurance Buyers,429,98,26,0
+287,Bill Payers,226,52,3,0
+288,Bill Payers,390,79,4,0
+289,Bill Payers,66,5,2,0
+290,Top-Ups,196,56,12,1
+291,Top-Ups,158,40,18,0
+292,Top-Ups,392,127,44,0
+293,Top-Ups,196,56,17,0
+294,Top-Ups,356,83,35,1
+295,Loan Seekers,449,186,14,1
+296,Top-Ups,176,33,12,0
+297,Bill Payers,148,12,5,0
+298,Bill Payers,244,85,16,0
+299,Top-Ups,216,46,4,1
+300,Bill Payers,251,66,4,0
+301,Top-Ups,374,76,14,0
+302,Insurance Buyers,116,52,3,0
+303,Loan Seekers,364,32,10,0
+304,Bill Payers,183,45,8,0
+305,Bill Payers,214,41,8,0
+306,Top-Ups,158,12,1,1
+307,Bill Payers,434,107,29,0
+308,Insurance Buyers,301,46,11,0
+309,Insurance Buyers,150,33,14,0
+310,Insurance Buyers,198,53,15,0
+311,Insurance Buyers,420,102,16,0
+312,Top-Ups,448,95,35,0
+313,Bill Payers,224,75,25,0
+314,Insurance Buyers,196,36,12,0
+315,Top-Ups,71,23,4,0
+316,Bill Payers,243,45,22,0
+317,Insurance Buyers,376,12,2,0
+318,Loan Seekers,185,56,4,0
+319,Loan Seekers,404,90,16,0
+320,Insurance Buyers,115,9,4,0
+321,Loan Seekers,62,15,5,0
+322,Loan Seekers,104,40,6,1
+323,Top-Ups,102,23,3,1
+324,Bill Payers,103,9,2,0
+325,Top-Ups,71,13,6,0
+326,Loan Seekers,339,34,9,0
+327,Bill Payers,203,58,8,0
+328,Loan Seekers,186,62,22,1
+329,Bill Payers,228,20,4,0
+330,Top-Ups,443,40,3,0
+331,Top-Ups,330,45,8,0
+332,Insurance Buyers,77,27,3,1
+333,Loan Seekers,62,15,4,1
+334,Bill Payers,489,129,44,1
+335,Loan Seekers,77,20,6,0
+336,Loan Seekers,167,48,12,1
+337,Top-Ups,386,28,5,0
+338,Loan Seekers,220,74,23,0
+339,Loan Seekers,141,57,21,0
+340,Bill Payers,273,45,1,0
+341,Insurance Buyers,160,44,3,1
+342,Top-Ups,206,28,8,0
+343,Insurance Buyers,442,66,21,1
+344,Top-Ups,350,66,20,0
+345,Top-Ups,331,28,3,1
+346,Bill Payers,64,16,7,1
+347,Top-Ups,127,25,2,0
+348,Loan Seekers,210,32,7,1
+349,Loan Seekers,117,46,8,0
+350,Insurance Buyers,309,102,31,0
+351,Loan Seekers,476,130,36,0
+352,Bill Payers,205,28,3,0
+353,Top-Ups,140,17,5,0
+354,Insurance Buyers,487,81,14,1
+355,Insurance Buyers,162,34,13,0
+356,Bill Payers,498,59,5,0
+357,Loan Seekers,427,155,19,1
+358,Bill Payers,198,51,12,1
+359,Insurance Buyers,454,157,19,0
+360,Loan Seekers,373,42,5,0
+361,Top-Ups,73,16,3,0
+362,Bill Payers,414,21,0,0
+363,Bill Payers,406,125,6,0
+364,Loan Seekers,381,35,4,1
+365,Top-Ups,255,22,8,0
+366,Top-Ups,359,88,23,0
+367,Top-Ups,58,9,1,1
+368,Top-Ups,172,51,11,1
+369,Top-Ups,153,12,2,0
+370,Insurance Buyers,362,61,9,1
+371,Insurance Buyers,112,37,8,0
+372,Bill Payers,401,134,40,1
+373,Bill Payers,437,110,26,0
+374,Bill Payers,385,126,23,0
+375,Loan Seekers,477,85,25,0
+376,Bill Payers,321,114,9,0
+377,Bill Payers,438,71,21,0
+378,Top-Ups,367,27,4,0
+379,Bill Payers,338,92,23,0
+380,Bill Payers,251,87,32,1
+381,Bill Payers,131,31,4,0
+382,Bill Payers,257,65,11,0
+383,Bill Payers,197,57,20,0
+384,Top-Ups,97,25,0,0
+385,Loan Seekers,315,76,5,0
+386,Bill Payers,333,87,27,0
+387,Top-Ups,95,12,3,0
+388,Bill Payers,468,156,54,0
+389,Bill Payers,90,14,0,0
+390,Top-Ups,96,5,0,1
+391,Bill Payers,483,132,56,0
+392,Top-Ups,370,58,9,0
+393,Insurance Buyers,402,148,22,0
+394,Bill Payers,301,37,10,0
+395,Loan Seekers,263,55,16,1
+396,Bill Payers,291,69,24,0
+397,Top-Ups,178,25,6,0
+398,Bill Payers,101,24,10,0
+399,Bill Payers,363,152,29,0
+400,Loan Seekers,167,41,8,0
+401,Bill Payers,288,77,7,0
+402,Loan Seekers,499,124,28,0
+403,Top-Ups,171,24,3,0
+404,Loan Seekers,296,43,14,1
+405,Bill Payers,338,69,15,0
+406,Top-Ups,481,173,64,0
+407,Loan Seekers,331,117,14,1
+408,Loan Seekers,302,41,16,1
+409,Top-Ups,361,132,36,1
+410,Insurance Buyers,436,23,2,0
+411,Loan Seekers,185,69,21,0
+412,Loan Seekers,371,115,17,1
+413,Top-Ups,488,89,27,0
+414,Loan Seekers,111,40,1,0
+415,Bill Payers,250,71,8,0
+416,Top-Ups,120,38,3,0
+417,Bill Payers,395,149,15,0
+418,Bill Payers,57,12,5,0
+419,Top-Ups,444,46,11,0
+420,Top-Ups,433,110,34,0
+421,Bill Payers,159,21,4,0
+422,Top-Ups,328,127,17,1
+423,Top-Ups,365,25,6,1
+424,Bill Payers,462,89,32,0
+425,Insurance Buyers,76,31,13,1
+426,Loan Seekers,192,29,13,0
+427,Loan Seekers,353,56,23,0
+428,Loan Seekers,305,93,34,1
+429,Bill Payers,123,13,5,0
+430,Bill Payers,77,15,10,0
+431,Top-Ups,215,51,16,0
+432,Insurance Buyers,326,80,29,0
+433,Top-Ups,242,30,7,0
+434,Loan Seekers,453,129,26,1
+435,Insurance Buyers,205,52,11,1
+436,Bill Payers,413,73,10,0
+437,Insurance Buyers,193,56,16,0
+438,Loan Seekers,288,81,13,0
+439,Top-Ups,347,127,7,0
+440,Bill Payers,407,148,37,0
+441,Loan Seekers,241,41,5,1
+442,Loan Seekers,150,21,4,1
+443,Bill Payers,327,73,20,0
+444,Bill Payers,287,43,15,1
+445,Bill Payers,488,27,9,0
+446,Top-Ups,448,53,15,1
+447,Loan Seekers,131,30,8,1
+448,Loan Seekers,97,17,5,0
+449,Loan Seekers,386,132,35,0
+450,Insurance Buyers,102,12,2,0
+451,Insurance Buyers,249,61,13,1
+452,Bill Payers,364,132,40,0
+453,Loan Seekers,455,137,15,0
+454,Loan Seekers,457,105,19,0
+455,Bill Payers,238,24,5,1
+456,Top-Ups,270,83,19,0
+457,Loan Seekers,192,60,1,0
+458,Bill Payers,231,93,23,1
+459,Loan Seekers,204,21,6,1
+460,Loan Seekers,322,30,4,1
+461,Bill Payers,249,81,9,0
+462,Insurance Buyers,205,53,14,0
+463,Insurance Buyers,213,73,23,1
+464,Bill Payers,404,39,8,0
+465,Insurance Buyers,257,56,9,0
+466,Bill Payers,286,49,12,0
+467,Top-Ups,59,5,2,0
+468,Bill Payers,154,48,21,1
+469,Bill Payers,232,20,9,0
+470,Insurance Buyers,165,17,3,0
+471,Bill Payers,485,155,8,0
+472,Bill Payers,198,52,3,0
+473,Top-Ups,54,2,0,0
+474,Loan Seekers,108,31,2,0
+475,Loan Seekers,139,46,9,1
+476,Loan Seekers,211,9,2,0
+477,Top-Ups,370,42,18,0
+478,Loan Seekers,139,18,5,0
+479,Loan Seekers,121,48,9,1
+480,Loan Seekers,107,29,6,0
+481,Top-Ups,195,40,4,0
+482,Top-Ups,288,78,18,0
+483,Top-Ups,366,60,14,0
+484,Bill Payers,470,27,4,0
+485,Bill Payers,333,78,19,0
+486,Bill Payers,499,159,45,0
+487,Top-Ups,222,51,4,0
+488,Bill Payers,155,54,4,0
+489,Loan Seekers,450,138,21,1
+490,Bill Payers,242,53,14,0
+491,Top-Ups,274,60,7,0
+492,Bill Payers,264,53,12,0
+493,Loan Seekers,363,70,6,0
+494,Loan Seekers,134,43,15,0
+495,Loan Seekers,290,20,10,1
+496,Bill Payers,288,19,7,0
+497,Bill Payers,332,86,16,0
+498,Bill Payers,92,33,15,0
+499,Bill Payers,398,111,20,0
+500,Top-Ups,334,59,7,0
+501,Top-Ups,334,37,8,0
+502,Loan Seekers,94,19,6,0
+503,Bill Payers,416,65,10,0
+504,Top-Ups,437,33,5,0
+505,Insurance Buyers,126,44,20,0
+506,Bill Payers,238,70,20,0
+507,Top-Ups,472,180,13,0
+508,Insurance Buyers,397,40,3,1
+509,Loan Seekers,244,77,21,1
+510,Loan Seekers,382,100,24,0
+511,Top-Ups,332,104,42,0
+512,Loan Seekers,275,97,30,0
+513,Top-Ups,106,34,9,0
+514,Loan Seekers,383,122,39,1
+515,Top-Ups,176,41,13,1
+516,Bill Payers,414,58,16,0
+517,Top-Ups,449,173,20,1
+518,Bill Payers,93,20,5,0
+519,Loan Seekers,402,20,3,0
+520,Top-Ups,446,180,15,0
+521,Top-Ups,268,35,1,1
+522,Bill Payers,462,31,5,0
+523,Bill Payers,243,64,6,0
+524,Top-Ups,122,35,12,0
+525,Bill Payers,414,148,54,0
+526,Bill Payers,69,23,9,0
+527,Loan Seekers,91,28,7,0
+528,Top-Ups,114,41,10,1
+529,Insurance Buyers,445,141,49,0
+530,Top-Ups,167,35,13,0
+531,Bill Payers,397,155,37,0
+532,Loan Seekers,335,76,34,0
+533,Insurance Buyers,407,72,30,0
+534,Insurance Buyers,218,22,3,1
+535,Bill Payers,285,49,3,0
+536,Bill Payers,238,59,10,0
+537,Insurance Buyers,195,27,9,0
+538,Top-Ups,88,40,9,0
+539,Top-Ups,230,29,10,0
+540,Bill Payers,93,5,1,1
+541,Top-Ups,82,10,2,1
+542,Loan Seekers,78,8,2,0
+543,Loan Seekers,308,44,5,0
+544,Bill Payers,147,60,13,0
+545,Bill Payers,478,154,40,0
+546,Loan Seekers,315,46,9,0
+547,Bill Payers,171,17,0,0
+548,Bill Payers,58,20,0,0
+549,Loan Seekers,457,115,29,0
+550,Insurance Buyers,394,35,4,1
+551,Top-Ups,476,32,1,0
+552,Top-Ups,186,34,2,1
+553,Bill Payers,329,59,3,0
+554,Top-Ups,350,78,36,0
+555,Insurance Buyers,423,133,40,0
+556,Top-Ups,269,47,4,0
+557,Bill Payers,392,89,40,0
+558,Top-Ups,263,79,9,0
+559,Bill Payers,456,113,12,0
+560,Loan Seekers,352,19,6,0
+561,Top-Ups,158,30,2,0
+562,Insurance Buyers,141,32,2,0
+563,Top-Ups,478,78,14,0
+564,Top-Ups,421,82,4,1
+565,Bill Payers,394,59,7,0
+566,Loan Seekers,409,56,14,0
+567,Loan Seekers,88,30,9,0
+568,Bill Payers,64,15,2,0
+569,Bill Payers,426,157,42,0
+570,Loan Seekers,58,0,0,0
+571,Bill Payers,86,14,4,0
+572,Loan Seekers,345,110,25,0
+573,Loan Seekers,325,56,18,0
+574,Bill Payers,235,20,4,0
+575,Loan Seekers,431,52,22,0
+576,Insurance Buyers,56,5,1,1
+577,Loan Seekers,129,34,8,1
+578,Insurance Buyers,334,49,5,0
+579,Loan Seekers,124,38,7,1
+580,Top-Ups,325,44,13,0
+581,Insurance Buyers,50,14,1,1
+582,Bill Payers,227,41,11,1
+583,Insurance Buyers,224,24,8,0
+584,Insurance Buyers,73,8,1,0
+585,Bill Payers,99,24,6,0
+586,Top-Ups,401,107,15,0
+587,Loan Seekers,464,52,10,0
+588,Insurance Buyers,143,27,7,1
+589,Top-Ups,162,14,2,0
+590,Top-Ups,130,52,5,0
+591,Bill Payers,234,21,4,0
+592,Top-Ups,300,25,9,0
+593,Bill Payers,131,12,2,0
+594,Insurance Buyers,367,47,2,1
+595,Bill Payers,278,74,6,0
+596,Bill Payers,119,17,9,0
+597,Top-Ups,383,127,5,1
+598,Loan Seekers,377,62,3,0
+599,Bill Payers,148,25,12,0
+600,Bill Payers,498,187,26,0
+601,Top-Ups,327,101,7,0
+602,Insurance Buyers,247,26,5,0
+603,Insurance Buyers,217,21,7,0
+604,Top-Ups,440,56,9,0
+605,Loan Seekers,196,58,21,0
+606,Top-Ups,288,66,7,0
+607,Insurance Buyers,93,27,7,0
+608,Top-Ups,116,10,6,1
+609,Top-Ups,131,50,21,0
+610,Insurance Buyers,257,74,9,1
+611,Loan Seekers,341,87,12,0
+612,Insurance Buyers,74,17,1,0
+613,Bill Payers,194,30,4,0
+614,Bill Payers,322,31,6,0
+615,Bill Payers,482,38,10,0
+616,Bill Payers,204,41,15,0
+617,Insurance Buyers,387,122,27,0
+618,Bill Payers,180,24,12,0
+619,Top-Ups,449,32,2,0
+620,Bill Payers,249,79,11,0
+621,Loan Seekers,248,51,4,0
+622,Top-Ups,157,44,11,0
+623,Loan Seekers,461,93,15,0
+624,Loan Seekers,179,21,7,1
+625,Insurance Buyers,321,64,11,0
+626,Top-Ups,295,80,26,1
+627,Loan Seekers,353,69,5,0
+628,Top-Ups,426,102,40,0
+629,Loan Seekers,171,18,6,0
+630,Loan Seekers,403,78,10,0
+631,Top-Ups,378,79,28,0
+632,Top-Ups,411,83,19,1
+633,Bill Payers,178,52,1,0
+634,Loan Seekers,100,14,4,0
+635,Bill Payers,492,170,28,0
+636,Insurance Buyers,74,3,1,0
+637,Loan Seekers,281,112,22,1
+638,Bill Payers,451,82,10,0
+639,Insurance Buyers,235,49,14,0
+640,Bill Payers,491,158,55,1
+641,Top-Ups,463,38,6,0
+642,Insurance Buyers,157,63,6,1
+643,Bill Payers,65,5,1,0
+644,Loan Seekers,357,95,16,1
+645,Top-Ups,304,81,11,1
+646,Insurance Buyers,390,73,6,0
+647,Top-Ups,117,47,2,0
+648,Loan Seekers,58,18,5,0
+649,Insurance Buyers,382,80,6,0
+650,Loan Seekers,154,64,23,0
+651,Bill Payers,356,53,3,0
+652,Loan Seekers,150,31,6,0
+653,Top-Ups,219,84,16,0
+654,Insurance Buyers,393,115,32,0
+655,Top-Ups,373,74,14,0
+656,Insurance Buyers,100,28,5,0
+657,Top-Ups,76,16,6,0
+658,Loan Seekers,291,58,15,0
+659,Top-Ups,486,22,4,0
+660,Top-Ups,94,8,2,0
+661,Loan Seekers,477,37,2,0
+662,Loan Seekers,427,90,25,0
+663,Loan Seekers,314,12,1,1
+664,Bill Payers,196,54,19,0
+665,Bill Payers,315,72,8,0
+666,Bill Payers,74,24,5,0
+667,Bill Payers,242,71,17,0
+668,Loan Seekers,485,48,6,1
+669,Top-Ups,324,124,43,0
+670,Bill Payers,149,42,14,0
+671,Loan Seekers,437,182,47,1
+672,Bill Payers,106,27,4,0
+673,Loan Seekers,314,102,24,1
+674,Loan Seekers,482,156,14,0
+675,Top-Ups,465,129,36,0
+676,Bill Payers,442,145,58,0
+677,Insurance Buyers,458,167,19,0
+678,Loan Seekers,137,16,3,1
+679,Loan Seekers,429,172,42,1
+680,Loan Seekers,94,25,4,1
+681,Bill Payers,52,9,0,0
+682,Top-Ups,425,142,23,0
+683,Loan Seekers,254,44,20,0
+684,Loan Seekers,359,64,7,0
+685,Top-Ups,469,66,3,0
+686,Top-Ups,71,14,2,0
+687,Top-Ups,88,3,1,0
+688,Bill Payers,423,105,18,0
+689,Bill Payers,411,136,26,1
+690,Loan Seekers,69,9,1,1
+691,Insurance Buyers,430,63,24,0
+692,Loan Seekers,121,28,4,0
+693,Bill Payers,187,26,8,0
+694,Bill Payers,147,48,20,0
+695,Loan Seekers,363,96,35,1
+696,Insurance Buyers,273,74,12,0
+697,Insurance Buyers,52,18,11,0
+698,Loan Seekers,88,35,16,1
+699,Bill Payers,240,34,6,1
+700,Top-Ups,125,30,8,1
+701,Top-Ups,267,80,8,0
+702,Bill Payers,485,165,32,0
+703,Bill Payers,248,23,11,0
+704,Loan Seekers,107,29,7,1
+705,Top-Ups,129,46,17,0
+706,Bill Payers,481,129,23,0
+707,Loan Seekers,484,64,9,0
+708,Bill Payers,102,28,8,0
+709,Bill Payers,434,35,6,0
+710,Loan Seekers,497,87,11,0
+711,Insurance Buyers,65,18,7,0
+712,Top-Ups,267,34,12,0
+713,Bill Payers,264,98,32,0
+714,Top-Ups,465,176,55,0
+715,Loan Seekers,488,44,10,0
+716,Loan Seekers,341,48,7,0
+717,Loan Seekers,96,8,3,0
+718,Top-Ups,98,12,7,1
+719,Top-Ups,484,147,56,0
+720,Bill Payers,404,97,36,0
+721,Bill Payers,219,12,2,0
+722,Loan Seekers,319,138,10,1
+723,Loan Seekers,161,66,25,1
+724,Bill Payers,285,69,13,0
+725,Loan Seekers,302,22,9,0
+726,Loan Seekers,349,35,4,1
+727,Top-Ups,401,100,33,0
+728,Bill Payers,335,23,11,0
+729,Top-Ups,102,16,7,0
+730,Loan Seekers,403,82,7,0
+731,Loan Seekers,304,38,2,1
+732,Insurance Buyers,75,15,3,0
+733,Loan Seekers,278,80,17,0
+734,Top-Ups,226,42,11,0
+735,Loan Seekers,335,120,20,0
+736,Insurance Buyers,99,23,6,0
+737,Bill Payers,462,73,22,0
+738,Insurance Buyers,481,81,19,0
+739,Loan Seekers,435,132,11,0
+740,Insurance Buyers,296,42,13,0
+741,Loan Seekers,143,25,2,0
+742,Loan Seekers,455,131,15,0
+743,Loan Seekers,348,56,7,1
+744,Insurance Buyers,281,23,8,0
+745,Top-Ups,395,128,15,0
+746,Bill Payers,93,26,6,1
+747,Top-Ups,253,28,3,0
+748,Insurance Buyers,472,114,5,0
+749,Bill Payers,276,19,6,1
+750,Top-Ups,366,30,8,0
+751,Loan Seekers,274,47,8,0
+752,Top-Ups,327,46,17,0
+753,Top-Ups,210,21,3,0
+754,Insurance Buyers,88,42,3,0
+755,Loan Seekers,227,60,9,0
+756,Top-Ups,329,113,6,0
+757,Loan Seekers,78,20,6,1
+758,Bill Payers,235,56,12,0
+759,Top-Ups,280,61,6,0
+760,Top-Ups,276,65,10,0
+761,Bill Payers,453,128,17,0
+762,Top-Ups,150,21,3,0
+763,Insurance Buyers,351,127,16,0
+764,Loan Seekers,491,70,17,0
+765,Bill Payers,331,85,26,0
+766,Loan Seekers,284,122,11,0
+767,Top-Ups,163,17,5,0
+768,Loan Seekers,108,31,5,1
+769,Loan Seekers,99,5,1,1
+770,Loan Seekers,472,38,13,0
+771,Top-Ups,237,79,22,0
+772,Loan Seekers,468,35,5,1
+773,Bill Payers,263,18,4,0
+774,Bill Payers,184,15,0,0
+775,Loan Seekers,332,25,5,0
+776,Top-Ups,362,123,38,0
+777,Top-Ups,167,14,3,0
+778,Loan Seekers,152,31,5,1
+779,Bill Payers,102,16,5,0
+780,Insurance Buyers,372,80,7,0
+781,Bill Payers,456,161,46,0
+782,Loan Seekers,452,167,14,0
+783,Insurance Buyers,172,63,18,1
+784,Top-Ups,307,26,7,1
+785,Top-Ups,416,33,8,0
+786,Top-Ups,452,99,16,0
+787,Bill Payers,347,71,25,0
+788,Insurance Buyers,301,77,5,0
+789,Bill Payers,470,88,28,0
+790,Top-Ups,270,49,13,0
+791,Top-Ups,170,23,4,0
+792,Bill Payers,444,95,29,0
+793,Loan Seekers,361,39,4,0
+794,Top-Ups,284,95,26,0
+795,Loan Seekers,104,28,14,0
+796,Loan Seekers,394,84,18,0
+797,Loan Seekers,82,30,8,1
+798,Loan Seekers,382,115,14,0
+799,Insurance Buyers,376,100,7,1
+800,Top-Ups,347,71,15,0
+801,Bill Payers,65,7,1,0
+802,Insurance Buyers,139,14,0,0
+803,Insurance Buyers,145,53,8,1
+804,Top-Ups,145,30,4,0
+805,Top-Ups,453,111,23,0
+806,Top-Ups,228,22,9,0
+807,Bill Payers,477,157,19,0
+808,Loan Seekers,467,190,74,0
+809,Top-Ups,239,70,22,0
+810,Bill Payers,220,46,10,0
+811,Bill Payers,74,7,3,1
+812,Top-Ups,378,22,11,0
+813,Loan Seekers,129,46,17,1
+814,Loan Seekers,362,40,10,0
+815,Insurance Buyers,477,142,54,0
+816,Loan Seekers,152,47,15,1
+817,Bill Payers,110,16,1,0
+818,Loan Seekers,141,46,5,0
+819,Bill Payers,450,33,4,0
+820,Bill Payers,198,52,6,0
+821,Insurance Buyers,198,85,21,0
+822,Top-Ups,115,32,6,0
+823,Loan Seekers,460,75,20,0
+824,Insurance Buyers,61,12,3,0
+825,Bill Payers,252,47,20,0
+826,Loan Seekers,204,70,7,0
+827,Bill Payers,395,49,16,0
+828,Insurance Buyers,491,155,17,0
+829,Top-Ups,201,45,6,0
+830,Loan Seekers,252,42,5,0
+831,Bill Payers,203,14,4,0
+832,Top-Ups,262,66,13,0
+833,Loan Seekers,402,125,41,1
+834,Top-Ups,212,37,6,0
+835,Loan Seekers,236,85,12,1
+836,Bill Payers,302,100,25,0
+837,Top-Ups,122,15,1,0
+838,Bill Payers,195,77,6,0
+839,Bill Payers,434,146,42,0
+840,Bill Payers,237,42,5,1
+841,Loan Seekers,393,152,27,1
+842,Top-Ups,237,70,14,1
+843,Loan Seekers,439,116,10,1
+844,Insurance Buyers,63,15,1,0
+845,Top-Ups,257,27,5,0
+846,Insurance Buyers,155,14,4,0
+847,Bill Payers,392,150,22,0
+848,Bill Payers,290,42,11,0
+849,Bill Payers,369,126,41,0
+850,Bill Payers,342,24,10,0
+851,Top-Ups,339,157,54,0
+852,Bill Payers,481,173,69,0
+853,Top-Ups,348,109,6,1
+854,Loan Seekers,91,14,4,0
+855,Bill Payers,324,100,24,1
+856,Top-Ups,203,32,9,0
+857,Top-Ups,266,27,6,1
+858,Bill Payers,499,57,4,0
+859,Loan Seekers,319,45,10,1
+860,Insurance Buyers,288,101,12,0
+861,Bill Payers,302,31,1,0
+862,Top-Ups,58,12,3,0
+863,Bill Payers,252,71,21,0
+864,Insurance Buyers,188,11,4,0
+865,Bill Payers,382,91,13,0
+866,Bill Payers,431,69,17,0
+867,Bill Payers,313,25,10,0
+868,Bill Payers,495,199,72,0
+869,Top-Ups,274,104,8,0
+870,Top-Ups,477,101,12,1
+871,Top-Ups,403,101,34,0
+872,Bill Payers,180,20,6,1
+873,Bill Payers,160,23,4,0
+874,Bill Payers,320,72,7,0
+875,Bill Payers,179,53,14,0
+876,Loan Seekers,149,60,16,0
+877,Insurance Buyers,466,13,3,0
+878,Bill Payers,189,81,21,0
+879,Insurance Buyers,138,39,12,0
+880,Bill Payers,143,16,4,1
+881,Insurance Buyers,395,62,11,0
+882,Loan Seekers,123,13,3,0
+883,Bill Payers,370,33,12,0
+884,Bill Payers,421,89,6,0
+885,Bill Payers,346,139,21,0
+886,Bill Payers,259,67,20,1
+887,Loan Seekers,384,19,4,0
+888,Top-Ups,168,16,3,0
+889,Bill Payers,280,78,27,0
+890,Loan Seekers,106,24,3,1
+891,Loan Seekers,337,23,6,1
+892,Top-Ups,340,39,16,0
+893,Loan Seekers,414,32,3,1
+894,Bill Payers,196,37,11,0
+895,Top-Ups,484,130,24,0
+896,Bill Payers,125,25,2,1
+897,Top-Ups,131,16,2,0
+898,Top-Ups,379,92,7,1
+899,Loan Seekers,195,40,7,1
+900,Insurance Buyers,163,43,6,0
+901,Top-Ups,229,84,12,0
+902,Top-Ups,252,16,1,1
+903,Bill Payers,429,78,29,0
+904,Bill Payers,173,32,3,0
+905,Loan Seekers,266,50,4,1
+906,Insurance Buyers,331,39,18,0
+907,Bill Payers,386,18,5,0
+908,Loan Seekers,167,33,0,0
+909,Bill Payers,427,84,4,0
+910,Bill Payers,109,34,12,0
+911,Insurance Buyers,97,20,8,0
+912,Loan Seekers,330,86,36,1
+913,Loan Seekers,483,159,16,0
+914,Bill Payers,296,17,7,0
+915,Bill Payers,250,39,3,0
+916,Loan Seekers,351,75,2,1
+917,Top-Ups,309,58,17,0
+918,Bill Payers,410,115,4,1
+919,Loan Seekers,196,96,37,0
+920,Top-Ups,450,127,23,0
+921,Bill Payers,121,11,0,0
+922,Bill Payers,324,88,4,0
+923,Loan Seekers,225,64,3,1
+924,Top-Ups,354,53,11,0
+925,Bill Payers,308,116,22,0
+926,Top-Ups,70,25,2,0
+927,Top-Ups,374,44,11,0
+928,Loan Seekers,233,72,18,1
+929,Bill Payers,334,10,5,0
+930,Top-Ups,466,76,7,0
+931,Bill Payers,137,30,17,0
+932,Insurance Buyers,327,63,23,0
+933,Bill Payers,334,63,18,0
+934,Loan Seekers,90,28,2,0
+935,Bill Payers,274,99,13,0
+936,Insurance Buyers,174,50,17,0
+937,Bill Payers,210,78,24,0
+938,Loan Seekers,283,90,33,1
+939,Top-Ups,275,75,5,0
+940,Top-Ups,134,48,7,0
+941,Bill Payers,282,25,5,0
+942,Insurance Buyers,203,33,5,0
+943,Loan Seekers,177,54,16,1
+944,Loan Seekers,215,57,17,0
+945,Bill Payers,117,32,13,0
+946,Bill Payers,314,97,25,0
+947,Top-Ups,185,20,4,0
+948,Bill Payers,82,23,10,0
+949,Top-Ups,486,55,11,1
+950,Bill Payers,377,99,19,0
+951,Loan Seekers,259,85,35,0
+952,Top-Ups,456,106,15,0
+953,Loan Seekers,98,17,0,0
+954,Top-Ups,108,39,9,0
+955,Top-Ups,118,16,1,0
+956,Top-Ups,342,44,11,0
+957,Insurance Buyers,126,24,3,0
+958,Top-Ups,79,28,3,0
+959,Loan Seekers,426,41,18,0
+960,Top-Ups,54,18,1,0
+961,Bill Payers,437,94,15,0
+962,Bill Payers,400,143,39,0
+963,Insurance Buyers,345,28,8,1
+964,Loan Seekers,380,23,2,1
+965,Loan Seekers,77,16,3,1
+966,Insurance Buyers,483,117,20,0
+967,Top-Ups,282,107,38,0
+968,Loan Seekers,225,17,6,0
+969,Bill Payers,104,35,6,0
+970,Top-Ups,222,41,8,1
+971,Bill Payers,260,93,15,1
+972,Top-Ups,396,105,9,0
+973,Loan Seekers,73,17,2,1
+974,Loan Seekers,67,4,0,0
+975,Bill Payers,105,19,6,0
+976,Top-Ups,67,11,3,1
+977,Insurance Buyers,366,79,10,0
+978,Bill Payers,224,47,11,0
+979,Bill Payers,160,51,6,0
+980,Top-Ups,440,144,27,0
+981,Loan Seekers,156,36,8,0
+982,Loan Seekers,419,80,20,1
+983,Insurance Buyers,243,81,9,0
+984,Top-Ups,66,16,5,0
+985,Insurance Buyers,150,24,7,0
+986,Bill Payers,333,126,24,0
+987,Bill Payers,242,88,16,0
+988,Bill Payers,244,55,13,0
+989,Bill Payers,400,38,8,0
+990,Top-Ups,191,55,3,0
+991,Bill Payers,494,95,32,0
+992,Bill Payers,285,104,7,0
+993,Top-Ups,407,100,41,0
+994,Bill Payers,182,12,6,0
+995,Loan Seekers,486,45,16,1
+996,Loan Seekers,270,92,18,1
+997,Bill Payers,313,100,13,0
+998,Bill Payers,385,53,15,0
+999,Insurance Buyers,298,49,5,0
+1000,Top-Ups,290,76,24,0

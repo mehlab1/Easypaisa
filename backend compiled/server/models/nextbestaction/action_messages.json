@@ -1,0 +1,182 @@
+{
+  "reminder": {
+    "title": "We Miss You!",
+    "message": "It’s been a while since your last visit. Come back and explore what’s new.",
+    "reasoning": ["Inactive for over a week", "Last login > 14 days"],
+    "cta": {
+      "button_text": "Open App",
+      "web_url": "https://mytelco.com/home"
+    },
+    "priority_score": 0.6
+  },
+  "offer": {
+    "title": "Exclusive Offer Just for You",
+    "message": "Enjoy a special offer curated based on your recent usage patterns.",
+    "reasoning": ["Engaged user", "Clicked offer last month"],
+    "cta": {
+      "button_text": "Claim Offer",
+      "web_url": "https://mytelco.com/offers"
+    },
+    "priority_score": 0.8
+  },
+  "upgrade": {
+    "title": "Level Up Your Experience",
+    "message": "Upgrade your app version or device support for better speed and performance.",
+    "reasoning": ["High app usage", "Older device detected"],
+    "cta": {
+      "button_text": "Upgrade Now",
+      "web_url": "https://mytelco.com/upgrade"
+    },
+    "priority_score": 0.7
+  },
+  "survey": {
+    "title": "Help Us Improve",
+    "message": "Take a short survey to share your thoughts and shape our services.",
+    "reasoning": ["New user", "Recent activity detected"],
+    "cta": {
+      "button_text": "Take Survey",
+      "web_url": "https://mytelco.com/survey"
+    },
+    "priority_score": 0.5
+  },
+  "cashback_incentive": {
+    "title": "Earn Cashback Instantly",
+    "message": "Recharge today and receive instant cashback rewards on your next transaction.",
+    "reasoning": ["Recharge patterns suggest loyalty", "High value user"],
+    "cta": {
+      "button_text": "Recharge Now",
+      "web_url": "https://mytelco.com/recharge"
+    },
+    "priority_score": 0.85
+  },
+  "show_loan_education": {
+    "title": "Understand Your Loan Better",
+    "message": "Explore your loan repayment options, schedules, and tips to stay on track.",
+    "reasoning": ["Low repayment score", "Has active loan"],
+    "cta": {
+      "button_text": "Learn More",
+      "web_url": "https://mytelco.com/loan-education"
+    },
+    "priority_score": 0.75
+  },
+  "low_balance_alert": {
+    "title": "Balance Running Low?",
+    "message": "Top up now to avoid service interruption.",
+    "reasoning": ["Low session duration", "Data usage spike"],
+    "cta": {
+      "button_text": "Top Up",
+      "web_url": "https://mytelco.com/topup"
+    },
+    "priority_score": 0.9
+  },
+  "suggest_savings_plan": {
+    "title": "Smart Saving Starts Here",
+    "message": "Switch to a savings plan that suits your budget and usage.",
+    "reasoning": ["High expenditure", "Frequent small top-ups"],
+    "cta": {
+      "button_text": "View Plans",
+      "web_url": "https://mytelco.com/savings"
+    },
+    "priority_score": 0.72
+  },
+  "winback_offer": {
+    "title": "We Want You Back!",
+    "message": "Here’s a limited-time deal to welcome you back to the app.",
+    "reasoning": ["Dormant segment", "Inactive for 30+ days"],
+    "cta": {
+      "button_text": "Claim Now",
+      "web_url": "https://mytelco.com/winback"
+    },
+    "priority_score": 0.95
+  },
+  "bill_due_reminder": {
+    "title": "Bill Due Soon",
+    "message": "Avoid late fees by paying your bill on time.",
+    "reasoning": ["Recent event: bill due", "Loan repayment history"],
+    "cta": {
+      "button_text": "Pay Bill",
+      "web_url": "https://mytelco.com/pay-bill"
+    },
+    "priority_score": 0.65
+  },
+  "preapproved_loan_prompt": {
+    "title": "Loan Preapproved for You",
+    "message": "You’re eligible for a quick loan based on your good repayment behavior.",
+    "reasoning": ["High repayment score", "Frequent usage"],
+    "cta": {
+      "button_text": "Apply Now",
+      "web_url": "https://mytelco.com/loans"
+    },
+    "priority_score": 0.93
+  },
+  "update_profile_prompt": {
+    "title": "Keep Your Info Fresh",
+    "message": "Complete your profile to receive more personalized offers.",
+    "reasoning": ["New user", "Incomplete profile detected"],
+    "cta": {
+      "button_text": "Update Profile",
+      "web_url": "https://mytelco.com/profile"
+    },
+    "priority_score": 0.55
+  },
+  "data_pack_discount_offer": {
+    "title": "Special Data Pack Just for You",
+    "message": "Save more with your personalized discounted data plan.",
+    "reasoning": ["High data usage", "Engaged user"],
+    "cta": {
+      "button_text": "Buy Now",
+      "web_url": "https://mytelco.com/data"
+    },
+    "priority_score": 0.78
+  },
+  "plan_upgrade_suggestion": {
+    "title": "Upgrade Your Plan",
+    "message": "You’ve outgrown your current plan. Switch now for better benefits.",
+    "reasoning": ["High session usage", "Frequent interaction"],
+    "cta": {
+      "button_text": "See Plans",
+      "web_url": "https://mytelco.com/plans"
+    },
+    "priority_score": 0.9
+  },
+  "network_feedback_survey": {
+    "title": "Rate Our Network",
+    "message": "Tell us how we’re doing in your area and help us improve.",
+    "reasoning": ["Device region mismatch", "Recent complaint"],
+    "cta": {
+      "button_text": "Give Feedback",
+      "web_url": "https://mytelco.com/network-survey"
+    },
+    "priority_score": 0.65
+  },
+  "suggest_wifi_usage": {
+    "title": "Save Data with Wi-Fi",
+    "message": "Use Wi-Fi for heavy downloads and app updates.",
+    "reasoning": ["High mobile data usage", "Not a data heavy user"],
+    "cta": {
+      "button_text": "Wi-Fi Tips",
+      "web_url": "https://mytelco.com/wifi-guide"
+    },
+    "priority_score": 0.68
+  },
+  "tailored_subscription_bundle": {
+    "title": "Get a Custom Bundle",
+    "message": "Your usage suggests you’d benefit from a custom subscription pack.",
+    "reasoning": ["Mixed service usage", "Above-average call + data use"],
+    "cta": {
+      "button_text": "Customize Bundle",
+      "web_url": "https://mytelco.com/custom-bundle"
+    },
+    "priority_score": 0.82
+  },
+  "connect_to_customer_support": {
+    "title": "We’re Here to Help",
+    "message": "Looks like something’s not right. Our support team is ready to assist.",
+    "reasoning": ["Complaint history", "Low engagement despite usage"],
+    "cta": {
+      "button_text": "Contact Support",
+      "web_url": "https://mytelco.com/support"
+    },
+    "priority_score": 0.88
+  }
+}
