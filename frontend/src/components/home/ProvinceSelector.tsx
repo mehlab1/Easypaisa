@@ -19,6 +19,12 @@ export interface Province {
     buttonColor: string;
     buttonHover: string;
   };
+  cultural: {
+    icons: string[];
+    patterns: string[];
+    landmarks: string[];
+    colors: string[];
+  };
 }
 
 export const provinces: Province[] = [
@@ -165,7 +171,7 @@ export default function ProvinceSelector() {
                    <div>
                      <div className="text-sm font-medium text-gray-800">{province.name}</div>
                      <div className="flex space-x-1 mt-1">
-                       {province.cultural.icons.slice(0, 3).map((icon, index) => (
+                       {province.cultural.icons.slice(0, 3).map((icon: string, index: number) => (
                          <span key={index} className="text-xs">{icon}</span>
                        ))}
                      </div>
