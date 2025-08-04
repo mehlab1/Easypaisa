@@ -1,84 +1,75 @@
 import { 
-  Smartphone, 
+  Download, 
   HandCoins, 
   PiggyBank, 
-  Building2, 
-  GraduationCap, 
-  Coins,
+  UserPlus,
+  Zap,
+  Receipt,
+  Gift,
   ShoppingCart,
-  Car,
-  Plane,
-  Home,
   Shield,
-  Heart
+  FileX,
+  Gamepad2,
+  MoreHorizontal
 } from "lucide-react";
-import { moreServices } from "@/lib/mockData";
-import { useProvince } from "@/contexts/ProvinceContext";
 
-const iconMap = {
-  mobile: Smartphone,
-  "hand-holding-usd": HandCoins,
-  "piggy-bank": PiggyBank,
-  university: Building2,
-  "graduation-cap": GraduationCap,
-  coins: Coins,
-  "shopping-cart": ShoppingCart,
-  car: Car,
-  plane: Plane,
-  home: Home,
-  shield: Shield,
-  heart: Heart
-};
-
-const colorMap = {
-  orange: "bg-orange-100 text-orange-500",
-  red: "bg-red-100 text-red-500",
-  green: "bg-green-100 text-green-500",
-  blue: "bg-blue-100 text-blue-500",
-  purple: "bg-purple-100 text-purple-500",
-  yellow: "bg-yellow-100 text-yellow-500",
-  pink: "bg-pink-100 text-pink-500",
-  indigo: "bg-indigo-100 text-indigo-500",
-  cyan: "bg-cyan-100 text-cyan-500",
-  emerald: "bg-emerald-100 text-emerald-500",
-  slate: "bg-slate-100 text-slate-500",
-  rose: "bg-rose-100 text-rose-500"
-};
+const moreServices = [
+  { icon: Download, label: "Easyload", color: "text-green-500" },
+  { icon: HandCoins, label: "Easycash\nLoan", color: "text-green-500" },
+  { icon: PiggyBank, label: "Savings\nPocket", color: "text-orange-500" },
+  { icon: UserPlus, label: "Invite & Earn", color: "text-gray-500" },
+  { icon: Zap, label: "ZU BRT", color: "text-red-500" },
+  { icon: Receipt, label: "Term Deposit", color: "text-green-500" },
+  { icon: Gift, label: "Daily Rewards", color: "text-green-500" },
+  { icon: ShoppingCart, label: "Buy Now Pay\nLater", color: "text-green-500" },
+  { icon: Shield, label: "Insurance\nMarketplace", color: "text-gray-500" },
+  { icon: FileX, label: "M-Tag", color: "text-red-500" },
+  { icon: Gamepad2, label: "Rs.1 Game", color: "text-green-500" },
+  { icon: MoreHorizontal, label: "See All", color: "text-green-500" }
+];
 
 export default function MoreWithEasypaisa() {
-  const { selectedProvince } = useProvince();
-  
   return (
-    <div className="px-4 mt-4">
-      <h3 className="text-base font-semibold text-[#333333] mb-3">More with easypaisa</h3>
-      <div className="carousel-container flex space-x-3 overflow-x-auto">
-        {moreServices.map((service, index) => {
-          const Icon = iconMap[service.icon as keyof typeof iconMap];
-          const colorClass = colorMap[service.color as keyof typeof colorMap];
+    <div className="px-4 mt-6">
+      <h3 className="text-base font-semibold text-black mb-4">More with easypaisa</h3>
+      <div className="grid grid-cols-4 gap-4 max-w-[324px] mx-auto">
+        {moreServices.slice(0, 8).map((service, index) => {
+          const Icon = service.icon;
           
           return (
             <div
               key={index}
-              className="min-w-[70px] flex-shrink-0 text-center cursor-pointer relative"
+              className="text-center cursor-pointer"
             >
-              {/* Cultural Element for third service */}
-              {selectedProvince.id !== "none" && index === 2 && (
-                <div className="absolute top-0 right-0 opacity-20">
-                  <span className="text-xs">{selectedProvince.cultural.icons[2]}</span>
-                </div>
-              )}
-              <div className={`w-12 h-12 ${colorClass} rounded-xl flex items-center justify-center mx-auto mb-2`}>
-                <Icon className="w-5 h-5" />
+              <div className="w-12 h-12 bg-gray-100 rounded-xl flex items-center justify-center mx-auto mb-2">
+                <Icon className={`w-5 h-5 ${service.color}`} />
               </div>
-              <p className="text-xs text-gray-600">{service.label}</p>
+              <p className="text-xs text-black leading-tight whitespace-pre-line">{service.label}</p>
             </div>
           );
         })}
       </div>
       
-      <div className="flex justify-center space-x-2 mt-3">
-        <div className="w-2 h-2 bg-[#A7C638] rounded-full"></div>
-        <div className="w-2 h-2 bg-gray-300 rounded-full"></div>
+      <div className="grid grid-cols-4 gap-4 max-w-[324px] mx-auto mt-4">
+        {moreServices.slice(8, 12).map((service, index) => {
+          const Icon = service.icon;
+          
+          return (
+            <div
+              key={index + 8}
+              className="text-center cursor-pointer"
+            >
+              <div className="w-12 h-12 bg-gray-100 rounded-xl flex items-center justify-center mx-auto mb-2">
+                <Icon className={`w-5 h-5 ${service.color}`} />
+              </div>
+              <p className="text-xs text-black leading-tight whitespace-pre-line">{service.label}</p>
+            </div>
+          );
+        })}
+      </div>
+      
+      <div className="flex justify-center space-x-2 mt-4">
+        <div className="w-2 h-2 bg-green-500 rounded-full"></div>
         <div className="w-2 h-2 bg-gray-300 rounded-full"></div>
       </div>
     </div>

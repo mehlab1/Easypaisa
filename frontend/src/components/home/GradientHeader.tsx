@@ -1,32 +1,35 @@
 import { useState } from "react";
-import { Bot, Coins } from "lucide-react";
-import { userProfile } from "@/lib/mockData";
-import { useProvince } from "@/contexts/ProvinceContext";
-import ProvinceSelector from "./ProvinceSelector";
+import { Search, Bell, ChevronRight, Menu } from "lucide-react";
 
 interface GradientHeaderProps {
   onOpenChat?: () => void;
 }
 
 export default function GradientHeader({ onOpenChat }: GradientHeaderProps) {
-  const { selectedProvince } = useProvince();
-
   return (
-    <div className={`${selectedProvince.theme.gradient} h-28 relative px-4 pt-6`}>
-      <div className="flex justify-between items-start mb-4">
-        <div>
-          <p className="text-white/80 text-xs">{userProfile.accountType}</p>
-          <h1 className="text-white text-lg font-semibold">{userProfile.name}</h1>
-        </div>
-        <div className="flex items-center space-x-3">
-          <ProvinceSelector />
-          <div className="flex items-center space-x-1">
-            <Coins className="w-3 h-3 text-yellow-400" />
-            <span className="text-white text-xs">My Rewards</span>
+    <div className="bg-gradient-to-b from-[#E0F7E0] to-[#C0EBC0] h-14 relative px-4 pt-2">
+      <div className="flex justify-between items-center h-12">
+        {/* Left Side - Profile and Menu */}
+        <div className="flex items-center space-x-4">
+          <div className="w-10 h-10 bg-[#D3D3D3] rounded-full flex items-center justify-center">
+            <span className="text-white font-bold text-sm">MM</span>
           </div>
-          <button onClick={onOpenChat} className="text-white">
-            <Bot className="w-5 h-5" />
-          </button>
+          <Menu className="w-6 h-6 text-white" />
+        </div>
+
+        {/* Center - Logo */}
+        <div className="flex items-center space-x-1">
+          <div className="w-8 h-8 bg-[#00C853] rounded-full flex items-center justify-center">
+            <span className="text-white font-bold text-lg italic">e</span>
+          </div>
+          <span className="text-black font-bold text-lg">digital bank</span>
+        </div>
+
+        {/* Right Side - Navigation Icons */}
+        <div className="flex items-center space-x-4">
+          <Search className="w-6 h-6 text-white" />
+          <Bell className="w-6 h-6 text-white" />
+          <ChevronRight className="w-6 h-6 text-white" />
         </div>
       </div>
     </div>
