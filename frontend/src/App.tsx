@@ -34,9 +34,9 @@ function App() {
         <div className="min-h-screen bg-gray-100 flex items-center justify-center p-4">
           <div className="relative">
             {/* iPhone Frame */}
-            <div className="relative w-[360px] h-[640px] bg-black rounded-[45px] p-2 shadow-2xl scale-75 sm:scale-90 md:scale-100">
+            <div className="relative w-[360px] min-h-[640px] bg-black rounded-[45px] p-2 shadow-2xl scale-75 sm:scale-90 md:scale-100">
               {/* Screen */}
-              <div className="relative w-full h-full bg-white rounded-[37px] overflow-hidden">
+              <div className="relative w-full h-full bg-white rounded-[37px] overflow-y-auto">
                 {/* Status Bar */}
                 <div className="absolute top-0 left-0 right-0 h-8 bg-transparent z-10 flex items-center justify-between px-6 pt-1">
                   <div className="flex items-center space-x-1">

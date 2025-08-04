@@ -145,7 +145,7 @@ export default function Account() {
   };
 
   return (
-    <div className="px-3 py-4">
+    <div className="min-h-screen bg-gradient-to-b from-[#E0F7E0] via-[#C0EBC0] to-white px-3 py-4">
       {/* Header */}
       <div className="mb-4">
         <h1 className="text-xl font-bold text-[#333333]">My Account</h1>
@@ -155,7 +155,7 @@ export default function Account() {
       {/* Profile Card */}
       <Card className="p-4 mb-4">
         <div className="flex items-center space-x-3 mb-3">
-          <div className="w-12 h-12 bg-[#A7C638] rounded-full flex items-center justify-center">
+          <div className="w-12 h-12 bg-[#00C853] rounded-full flex items-center justify-center">
             <User className="w-6 h-6 text-white" />
           </div>
           <div className="flex-1">
@@ -235,7 +235,7 @@ export default function Account() {
       <Card className="p-4 mb-4">
         <div className="flex justify-between items-center mb-3">
           <h3 className="font-semibold text-[#333333] text-sm">Recent Transactions</h3>
-          <Button variant="outline" size="sm" className="text-[#A7C638] border-[#A7C638] text-xs px-2 py-1">
+          <Button variant="outline" size="sm" className="text-[#00C853] border-[#00C853] hover:bg-[#00C853] hover:text-white text-xs px-2 py-1">
             View All
           </Button>
         </div>
@@ -304,17 +304,17 @@ export default function Account() {
                 <p className="text-xs text-gray-600">Earn points on every transaction</p>
               </div>
             </div>
-            <span className="text-xs font-semibold text-[#A7C638]">1,250 pts</span>
+            <span className="text-xs font-semibold text-[#00C853]">1,250 pts</span>
           </div>
           <div className="flex items-center justify-between p-2 bg-[#E6F4EA] rounded-lg">
             <div className="flex items-center space-x-2">
-              <Gift className="w-4 h-4 text-[#A7C638]" />
+              <Gift className="w-4 h-4 text-[#00C853]" />
               <div>
                 <p className="text-xs font-medium text-[#333333]">Active Offers</p>
                 <p className="text-xs text-gray-600">5% cashback on groceries</p>
               </div>
             </div>
-            <span className="text-xs font-semibold text-[#A7C638]">2 offers</span>
+            <span className="text-xs font-semibold text-[#00C853]">2 offers</span>
           </div>
         </div>
       </Card>

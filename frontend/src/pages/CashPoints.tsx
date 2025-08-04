@@ -52,14 +52,14 @@ const cashPoints = [
 
 export default function CashPoints() {
   return (
-    <div className="px-3 py-4">
+    <div className="min-h-screen bg-gradient-to-b from-[#E0F7E0] via-[#C0EBC0] to-white px-3 py-4">
       {/* Header */}
       <div className="flex justify-between items-center mb-4">
         <div>
           <h1 className="text-xl font-bold text-[#333333]">Cash Points</h1>
           <p className="text-gray-600 text-xs">Find nearby Easypaisa locations</p>
         </div>
-        <Button className="bg-[#A7C638] hover:bg-[#96B032] text-white rounded-full text-xs font-medium px-3 py-1">
+        <Button className="bg-[#00C853] hover:bg-[#00B548] text-white rounded-full text-xs font-medium px-3 py-1">
           <MapPin className="w-3 h-3 mr-1" />
           Use My Location
         </Button>
@@ -97,7 +97,7 @@ export default function CashPoints() {
                   </div>
                 </div>
               </div>
-              <Button variant="outline" size="sm" className="border-[#A7C638] text-[#A7C638] hover:bg-[#A7C638] hover:text-white h-8 w-8 p-0">
+              <Button variant="outline" size="sm" className="border-[#00C853] text-[#00C853] hover:bg-[#00C853] hover:text-white h-8 w-8 p-0">
                 <Navigation className="w-3 h-3" />
               </Button>
             </div>
@@ -109,7 +109,7 @@ export default function CashPoints() {
                 {point.services.map((service, index) => (
                   <span
                     key={index}
-                    className="px-2 py-0.5 bg-[#E6F4EA] text-[#A7C638] text-xs rounded-full"
+                    className="px-2 py-0.5 bg-[#E0F7E0] text-[#00C853] text-xs rounded-full"
                   >
                     {service}
                   </span>
@@ -129,7 +129,7 @@ export default function CashPoints() {
                   <span>{point.hours}</span>
                 </div>
               </div>
-              <Button size="sm" className="bg-[#A7C638] hover:bg-[#96B032] text-white text-xs px-2 py-1">
+              <Button size="sm" className="bg-[#00C853] hover:bg-[#00B548] text-white text-xs px-2 py-1">
                 Call Now
               </Button>
             </div>

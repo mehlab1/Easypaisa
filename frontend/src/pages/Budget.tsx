@@ -39,12 +39,12 @@ export default function Budget() {
   };
 
   return (
-    <div className="px-3 py-4">
+    <div className="min-h-screen bg-gradient-to-b from-[#E0F7E0] via-[#C0EBC0] to-white px-3 py-4">
       <div className="flex justify-between items-center mb-4">
         <h1 className="text-xl font-bold text-[#333333]">Budget Dashboard</h1>
         <div className="flex space-x-2">
           <SaveForModal onSave={handleSaveGoal} />
-          <Button className={`${selectedProvince.theme.buttonColor} ${selectedProvince.theme.buttonHover} text-white rounded-full text-xs font-medium px-3 py-1`}>
+          <Button className="bg-[#00C853] hover:bg-[#00B548] text-white rounded-full text-xs font-medium px-3 py-1">
             Set Budget
           </Button>
         </div>

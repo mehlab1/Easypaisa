@@ -126,7 +126,8 @@ export default function SaveForModal({ onSave }: SaveForModalProps) {
   return (
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
       <DialogTrigger asChild>
-        <Button className={`${selectedProvince.theme.buttonColor} ${selectedProvince.theme.buttonHover} text-white rounded-full text-xs font-medium px-3 py-1`}>
+                <Button className="bg-[#00C853] hover:bg-[#00B548] text-white rounded-full text-xs font-medium px-3 py-1">
+          <Plus className="w-4 h-4 mr-1" />
           Save For
         </Button>
       </DialogTrigger>

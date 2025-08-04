@@ -7,9 +7,28 @@ export const userProfile = {
 
 export const suggestions = [
   {
-    icon: "bill",
-    title: "Suggested for You",
-    subtitle: "Pay Electricity Bill (Due in 2 Days)"
+    id: 1,
+    title: "Pay Bill",
+    subtitle: "Electricity bill due in 2 days",
+    type: "bill"
+  },
+  {
+    id: 2,
+    title: "Smart Saving",
+    subtitle: "Save Rs.500 on monthly budget",
+    type: "saving"
+  },
+  {
+    id: 3,
+    title: "Mobile Package",
+    subtitle: "Weekly super load expires today",
+    type: "mobile"
+  },
+  {
+    id: 4,
+    title: "Special Offer",
+    subtitle: "30% cashback on grocery shopping",
+    type: "offer"
   }
 ];
 

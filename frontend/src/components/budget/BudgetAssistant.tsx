@@ -120,7 +120,7 @@ export default function BudgetAssistant() {
       {/* Floating AI Button */}
       <Button
         onClick={() => setIsOpen(true)}
-        className="fixed bottom-20 right-4 w-12 h-12 bg-[#A7C638] hover:bg-[#96B032] text-white rounded-full shadow-lg z-40"
+        className="fixed bottom-20 right-4 w-12 h-12 bg-[#00C853] hover:bg-[#00B548] text-white rounded-full shadow-lg z-40"
       >
         <Bot className="w-5 h-5" />
       </Button>
@@ -132,7 +132,7 @@ export default function BudgetAssistant() {
             {/* Header */}
             <div className="flex items-center justify-between p-3 border-b">
               <div className="flex items-center space-x-2">
-                <Bot className="w-5 h-5 text-[#A7C638]" />
+                <Bot className="w-5 h-5 text-[#00C853]" />
                 <span className="font-semibold text-sm">Budget Assistant</span>
               </div>
               <Button
@@ -156,7 +156,7 @@ export default function BudgetAssistant() {
                     className={`max-w-[80%] p-2 rounded-lg text-xs ${
                       message.isBot
                         ? 'bg-gray-100 text-gray-800'
-                        : 'bg-[#A7C638] text-white'
+                        : 'bg-[#00C853] text-white'
                     }`}
                   >
                     <div className="whitespace-pre-line">{message.text}</div>
@@ -194,7 +194,7 @@ export default function BudgetAssistant() {
                   onChange={(e) => setInputValue(e.target.value)}
                   onKeyPress={(e) => e.key === 'Enter' && handleSendMessage()}
                   placeholder="Ask me about budgeting..."
-                  className="flex-1 px-2 py-1 text-xs border border-gray-300 rounded-lg focus:outline-none focus:border-[#A7C638]"
+                  className="flex-1 px-2 py-1 text-xs border border-gray-300 rounded-lg focus:outline-none focus:border-[#00C853]"
                 />
                 <Button
                   onClick={handleSendMessage}

@@ -10,10 +10,10 @@ export default function Layout({ children }: LayoutProps) {
   const [isChatOpen, setIsChatOpen] = useState(false);
 
   return (
-    <div className="h-full">
+    <div className="min-h-full flex flex-col">
       <NavBar />
       
-      <div className="h-full pb-20">
+      <div className="flex-1 pb-20">
         {children}
       </div>
 

@@ -3,7 +3,7 @@ import {
   Home, 
   MapPin, 
   QrCode, 
-  Gift, 
+  PiggyBank, 
   User
 } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -12,7 +12,7 @@ const navigationItems = [
   { id: "home", label: "Home", icon: Home, path: "/" },
   { id: "cash-points", label: "Cash Points", icon: MapPin, path: "/cash-points" },
   { id: "qr", label: "", icon: QrCode, path: "/qr" },
-  { id: "promotions", label: "Promotions", icon: Gift, path: "/promotions" },
+  { id: "budget", label: "Budget", icon: PiggyBank, path: "/budget" },
   { id: "account", label: "My Account", icon: User, path: "/account" }
 ];
 
